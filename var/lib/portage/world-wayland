@@ -31,6 +31,8 @@ dev-util/vulkan-tools
 dev-util/rustup
 dev-vcs/git
 dev-vcs/rcs
+dev-qt/qtvirtualkeyboard
+dev-qt/qtwayland
 games-action/minecraft-launcher
 games-arcade/supertux
 games-board/cutechess
@@ -47,6 +49,7 @@ kde-apps/kfind
 kde-apps/kolourpaint
 kde-apps/ksystemlog
 kde-apps/kwalletmanager
+kde-frameworks/kdoctools
 kde-plasma/discover
 kde-plasma/kwallet-pam
 kde-plasma/plasma-meta
@@ -109,6 +112,7 @@ x11-drivers/nvidia-drivers
 x11-misc/prime-run
 x11-misc/wmctrl
 x11-terms/kitty
+x11-themes/kvantum
 
 #dev-util/android-tools
 #sys-block/partitionmanager
