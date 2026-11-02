@@ -110,3 +110,11 @@ promptinit; prompt gentoo
 
 # enabling cache for the completions for zsh
 zstyle ':completion::complete:*' use-cache 1
+
+#
+export PATH=~/.cargo/bin/:$PATH
+
+#
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
