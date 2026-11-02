@@ -34,8 +34,6 @@ dev-vcs/git
 dev-vcs/rcs
 games-action/minecraft-launcher
 games-arcade/supertux
-games-board/cutechess
-games-board/stockfish
 games-util/game-device-udev-rules
 games-util/steam-launcher
 gui-wm/gamescope
@@ -62,6 +60,8 @@ media-libs/noise-suppression-for-voice
 media-libs/nvidia-vaapi-driver
 media-libs/openal
 media-plugins/alsa-plugins
+media-plugins/gst-plugins-libav
+media-plugins/gst-plugins-meta
 media-sound/alsa-utils
 media-video/libva-utils
 media-video/obs-studio
@@ -113,6 +113,8 @@ x11-misc/wmctrl
 x11-terms/kitty
 
 #dev-util/android-tools
+#games-board/cutechess
+#games-board/stockfish
 #sys-block/partitionmanager
 #sys-boot/vboot-utils
 #sys-fs/cryptsetup
