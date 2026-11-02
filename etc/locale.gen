@@ -1,6 +1,14 @@
-# This file defines which locales to incorporate into the glibc locale archive.
-# See locale.gen(5) and locale-gen(8) man pages for more details
+# this file defines which locales to incorporate into the glibc locale archive.
+# see locale.gen(5) and locale-gen(8) man pages for more details
 
-# en_GB            # British English (United Kingdom)
-en_US              # American English (United States)
-# ja_JP            # Japanese (Japan)
+# american english (united states)
+en_US
+en_US.UTF8 UTF-8
+
+# swedish (sweden)
+# sv_SE
+# sv_SE.UTF-8 UTF-8
+
+# japanese (japan)
+# ja_JP
+# ja_JP.UTF-8 UTF-8
