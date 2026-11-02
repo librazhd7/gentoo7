@@ -1,5 +1,6 @@
 app-admin/doas
 app-admin/eclean-kernel
+app-arch/unrar
 app-arch/zstd
 app-crypt/sbsigntools
 app-editors/nano
