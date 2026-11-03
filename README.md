@@ -134,11 +134,16 @@ mkfs.xfs -m finobt=1,reflink=1,rmapbt=1 /dev/mapper/tux-root
 ```
 
 > [!NOTE]
-> for disk encryption with `luks2` by using `dm-crypt` see below:
+> for disk encryption with `luks2` by using `dm-crypt` (optional) see below:
 > ```
 > cryptsetup luksFormat --type luks2 --cipher aes-xts-plain64 --key-size 512 --pbkdf argon2id /dev/nvme0n1p2
 > cryptsetup luksOpen /dev/nvme0n1p2 root
 > cryptsetup refresh --allow-discards root
+> ```
+> for configuring `dm-integrity` by using `integritysetup` (recommended) see below:
+> ```
+> integritysetup format /dev/nvme0n1p2
+> integritysetup open /dev/nvme0n1p2 root
 > ```
 
 > [!TIP]
