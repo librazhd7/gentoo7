@@ -483,9 +483,15 @@ git clone https://github.com/BeardOverflow/msi-ec.git
 cd msi-ec
 make dkms-install
 
+#
 eselect repository enable tatsh-overlay
 emaint sync -r tatsh-overlay
 emerge --ask app-misc/mcontrolcenter
+
+#
+eselect repository enable hossie
+emaint sync -r hossie
+emerge --ask app-misc/claude-desktop-official
 
 #
 curl -fsSL https://claude.ai/install.sh | bash
