@@ -1,5 +1,5 @@
 efi=runtime
-root=PARTUUID=xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx ro
+root=/dev/mapper/tux-root ro
 #cryptdevice=UUID=xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx:root
 #rd.luks.uuid=xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
 #rd.luks.options=discard
