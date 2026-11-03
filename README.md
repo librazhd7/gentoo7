@@ -496,8 +496,11 @@ ollama run qwen3.6:27b
 > ```
 > # apply repo-specific configurations by cloning the repo and cd into it:
 > git clone https://github.com/librazhd7/gentoo7.git
-> wget https://github.com/librazhd7/gentoo7/archive/refs/heads/main.zip
 > cd gentoo7-main
+>
+> #
+> wget https://github.com/librazhd7/gentoo7/archive/refs/heads/main.zip
+> unzip gentoo7-main.zip
 >
 > # grant execute permission and run automated setup (unsafe, work in progress):
 > chmod +x ./setup.sh && ./setup.sh
