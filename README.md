@@ -445,7 +445,7 @@ eclean-pkg
 > be sure to check the boot entries after issuing: `eclean-kernel -n 1`.                                                 \
 > it may be empty, and you will only be able to rewrite the boot entry through a livecd.
 
-### rustup, zsh, nvidia, pipewire, virtualization[^20]
+### rustup, zsh, nvidia, pipewire, virtualization[^20] (needs updating)
 ```
 #
 emerge --ask app-shells/zsh app-shells/zsh-completions app-shells/gentoo-zsh-completions
@@ -465,9 +465,10 @@ winetricks dxvk vkd3d mfc42
 #
 emerge --ask sys-apps/flatpak
 flatpak remote-add --user --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
-flatpak --user install flathub app.fluxer.Fluxer
+
 wget https://github.com/storytold/craft-launcher/releases/download/v0.12.0/artcraft-launcher-0.12.0-linux-x86_64.flatpak
 flatpak --user install artcraft-launcher-0.12.0-linux-x86_64.flatpak
+flatpak --user install flathub app.fluxer.Fluxer
 
 #
 eselect repository enable guru
@@ -481,11 +482,13 @@ emerge --ask games-util/steam-launcher
 git clone https://github.com/BeardOverflow/msi-ec.git
 cd msi-ec
 make dkms-install
+
 eselect repository enable tatsh-overlay
 emaint sync -r tatsh-overlay
 emerge --ask app-misc/mcontrolcenter
 
 #
+curl -fsSL https://claude.ai/install.sh | bash
 curl -fsSL https://ollama.com/install.sh | sh
 ollama run qwen3.6:27b
 ```
@@ -538,31 +541,31 @@ ollama run qwen3.6:27b
 - [__fonts__][docs/fonts]
 - [__fwupd__][docs/fwupd]
 - [__gamescope__][docs/gamescope] (arch)
-- [__gcc optimization__][docs/gcc-optimization]
+- [__gcc optimization__][docs/gcc_optimization]
 - [__gentoolkit__][docs/gentoolkit]
 - [__git__][docs/git]
 - [__guru__][docs/guru]
-- [__hybrid graphics__][docs/hybrid-graphics]
+- [__hybrid graphics__][docs/hybrid_graphics]
 - [__libinput__][docs/libinput]
-- [__libvirt__][docs/ibvirt]
+- [__libvirt__][docs/libvirt]
 - [__lto__][docs/lto]
 - [__networkmanager__][docs/networkmanager]
 - [__nvidia-drivers__][docs/nvidia-drivers]
 - [__optimus__][docs/optimus]
 - [__pipewire__][docs/pipewire]
-- [__power management__][docs/power-management]
+- [__power management__][docs/power_management]
 - [__printing__][docs/printing]
 - [__qemu__][docs/qemu]
 - [__rust__][docs/rust]
-- [__safe cflags__][docs/safe-cflags]
+- [__safe cflags__][docs/safe_cflags]
 - [__samba__][docs/samba]
-- [__secure boot__][docs/secureboot]
+- [__secure boot__][docs/secure_boot]
 - [__ssh__][docs/ssh]
 - [__steam__][docs/steam]
 - [__tmpfs__][docs/tmpfs]
 - [__tpm__][docs/tpm]
 - [__udev__][docs/udev]
-- [__unified kernel image__][docs/unified-kernel-image]
+- [__unified kernel image__][docs/uki]
 - [__wine__][docs/wine]
 - [__xdg-desktop-portal__][docs/xdg-desktop-portal]
 - [__xfs__][docs/xfs]
@@ -571,58 +574,58 @@ ollama run qwen3.6:27b
 - [__zswap__][docs/zswap]
 
 <!-- docs -->
-[url/acpi]:                 <https://wiki.gentoo.org/wiki/ACPI>
-[url/alsa]:                 <https://wiki.gentoo.org/wiki/ALSA>
-[url/backlight]:            <https://wiki.archlinux.org/title/Backlight>
-[url/bash]:                 <https://wiki.gentoo.org/wiki/Bash>
-[url/bluetooth]:            <https://wiki.gentoo.org/wiki/Bluetooth>
-[url/dispatch-conf]:        <https://wiki.gentoo.org/wiki/Dispatch-conf>
-[url/dnsmasq]:              <https://wiki.gentoo.org/wiki/Dnsmasq>
-[url/dracut]:               <https://wiki.gentoo.org/wiki/Dracut>
-[url/eselect]:              <https://wiki.gentoo.org/wiki/Eselect>
-[url/fonts]:                <https://wiki.gentoo.org/wiki/Fonts>
-[url/fwupd]:                <https://wiki.gentoo.org/wiki/Fwupd>
-[url/gamescope]:            <https://wiki.archlinux.org/title/Gamescope>
-[url/gcc-optimization]:     <https://wiki.gentoo.org/wiki/GCC_optimization>
-[url/gentoolkit]:           <https://wiki.gentoo.org/wiki/Gentoolkit>
-[url/git]:                  <https://wiki.gentoo.org/wiki/Git>
-[url/guru]:                 <https://wiki.gentoo.org/wiki/Project:GURU>
-[url/hybrid-graphics]:      <https://wiki.gentoo.org/wiki/Hybrid_graphics>
-[url/intel]:                <https://wiki.gentoo.org/wiki/Intel>
-[url/kernel]:               <https://wiki.gentoo.org/wiki/Kernel>
-[url/libinput]:             <https://wiki.gentoo.org/wiki/Libinput>
-[url/libvirt]:              <https://wiki.gentoo.org/wiki/Libvirt>
-[url/linux-firmware]:       <https://wiki.gentoo.org/wiki/Linux_firmware>
-[url/lto]:                  <https://wiki.gentoo.org/wiki/LTO>
-[url/lvm]:                  <https://wiki.gentoo.org/wiki/LVM>
-[url/microcode]:            <https://wiki.gentoo.org/wiki/Microcode>
-[url/networkmanager]:       <https://wiki.gentoo.org/wiki/NetworkManager>
-[url/nvidia-drivers]:       <https://wiki.gentoo.org/wiki/NVIDIA/nvidia-drivers>
-[url/optimus]:              <https://wiki.gentoo.org/wiki/NVIDIA/Optimus>
-[url/pipewire]:             <https://wiki.gentoo.org/wiki/PipeWire>
-[url/power-management]:     <https://wiki.gentoo.org/wiki/Power_management>
-[url/printing]:             <https://wiki.gentoo.org/wiki/Printing>
-[url/qemu]:                 <https://wiki.gentoo.org/wiki/QEMU>
-[url/rust]:                 <https://wiki.gentoo.org/wiki/Rust>
-[url/safe-cflags]:          <https://wiki.gentoo.org/wiki/Safe_CFLAGS>
-[url/samba]:                <https://wiki.gentoo.org/wiki/Samba>
-[url/secureboot]:           <https://wiki.gentoo.org/wiki/Secure_Boot>
-[url/ssh]:                  <https://wiki.gentoo.org/wiki/SSH>
-[url/steam]:                <https://wiki.gentoo.org/wiki/Steam>
-[url/swap]:                 <https://wiki.gentoo.org/wiki/Swap>
-[url/systemd]:              <https://wiki.gentoo.org/wiki/Systemd>
-[url/systemd-boot]:         <https://wiki.gentoo.org/wiki/Systemd/systemd-boot>
-[url/tmpfs]:                <https://wiki.gentoo.org/wiki/Portage_TMPDIR_on_tmpfs>
-[url/tpm]:                  <https://wiki.gentoo.org/wiki/Trusted_Platform_Module>
-[url/udev]:                 <https://wiki.gentoo.org/wiki/Udev>
-[url/uefi]:                 <https://wiki.gentoo.org/wiki/UEFI>
-[url/unified-kernel-image]: <https://wiki.gentoo.org/wiki/Unified_kernel_image>
-[url/wine]:                 <https://wiki.gentoo.org/wiki/Wine>
-[url/xdg-desktop-portal]:   <https://wiki.gentoo.org/wiki/XDG/xdg-desktop-portal>
-[url/xfs]:                  <https://wiki.gentoo.org/wiki/XFS>
-[url/xorg]:                 <https://wiki.gentoo.org/wiki/Xorg>
-[url/zsh]:                  <https://wiki.gentoo.org/wiki/Zsh>
-[url/zswap]:                <https://wiki.gentoo.org/wiki/Zswap>
+[docs/acpi]:                 <https://wiki.gentoo.org/wiki/ACPI>
+[docs/alsa]:                 <https://wiki.gentoo.org/wiki/ALSA>
+[docs/backlight]:            <https://wiki.archlinux.org/title/Backlight>
+[docs/bash]:                 <https://wiki.gentoo.org/wiki/Bash>
+[docs/bluetooth]:            <https://wiki.gentoo.org/wiki/Bluetooth>
+[docs/dispatch-conf]:        <https://wiki.gentoo.org/wiki/Dispatch-conf>
+[docs/dnsmasq]:              <https://wiki.gentoo.org/wiki/Dnsmasq>
+[docs/dracut]:               <https://wiki.gentoo.org/wiki/Dracut>
+[docs/eselect]:              <https://wiki.gentoo.org/wiki/Eselect>
+[docs/fonts]:                <https://wiki.gentoo.org/wiki/Fonts>
+[docs/fwupd]:                <https://wiki.gentoo.org/wiki/Fwupd>
+[docs/gamescope]:            <https://wiki.archlinux.org/title/Gamescope>
+[docs/gcc_optimization]:     <https://wiki.gentoo.org/wiki/GCC_optimization>
+[docs/gentoolkit]:           <https://wiki.gentoo.org/wiki/Gentoolkit>
+[docs/git]:                  <https://wiki.gentoo.org/wiki/Git>
+[docs/guru]:                 <https://wiki.gentoo.org/wiki/Project:GURU>
+[docs/hybrid_graphics]:      <https://wiki.gentoo.org/wiki/Hybrid_graphics>
+[docs/intel]:                <https://wiki.gentoo.org/wiki/Intel>
+[docs/kernel]:               <https://wiki.gentoo.org/wiki/Kernel>
+[docs/libinput]:             <https://wiki.gentoo.org/wiki/Libinput>
+[docs/libvirt]:              <https://wiki.gentoo.org/wiki/Libvirt>
+[docs/linux_firmware]:       <https://wiki.gentoo.org/wiki/Linux_firmware>
+[docs/lto]:                  <https://wiki.gentoo.org/wiki/LTO>
+[docs/lvm]:                  <https://wiki.gentoo.org/wiki/LVM>
+[docs/microcode]:            <https://wiki.gentoo.org/wiki/Microcode>
+[docs/networkmanager]:       <https://wiki.gentoo.org/wiki/NetworkManager>
+[docs/nvidia-drivers]:       <https://wiki.gentoo.org/wiki/NVIDIA/nvidia-drivers>
+[docs/optimus]:              <https://wiki.gentoo.org/wiki/NVIDIA/Optimus>
+[docs/pipewire]:             <https://wiki.gentoo.org/wiki/PipeWire>
+[docs/power_management]:     <https://wiki.gentoo.org/wiki/Power_management>
+[docs/printing]:             <https://wiki.gentoo.org/wiki/Printing>
+[docs/qemu]:                 <https://wiki.gentoo.org/wiki/QEMU>
+[docs/rust]:                 <https://wiki.gentoo.org/wiki/Rust>
+[docs/safe_cflags]:          <https://wiki.gentoo.org/wiki/Safe_CFLAGS>
+[docs/samba]:                <https://wiki.gentoo.org/wiki/Samba>
+[docs/secure_boot]:          <https://wiki.gentoo.org/wiki/Secure_Boot>
+[docs/ssh]:                  <https://wiki.gentoo.org/wiki/SSH>
+[docs/steam]:                <https://wiki.gentoo.org/wiki/Steam>
+[docs/swap]:                 <https://wiki.gentoo.org/wiki/Swap>
+[docs/systemd]:              <https://wiki.gentoo.org/wiki/Systemd>
+[docs/systemd-boot]:         <https://wiki.gentoo.org/wiki/Systemd/systemd-boot>
+[docs/tmpfs]:                <https://wiki.gentoo.org/wiki/Portage_TMPDIR_on_tmpfs>
+[docs/tpm]:                  <https://wiki.gentoo.org/wiki/Trusted_Platform_Module>
+[docs/udev]:                 <https://wiki.gentoo.org/wiki/Udev>
+[docs/uefi]:                 <https://wiki.gentoo.org/wiki/UEFI>
+[docs/uki]:                  <https://wiki.gentoo.org/wiki/Unified_kernel_image>
+[docs/wine]:                 <https://wiki.gentoo.org/wiki/Wine>
+[docs/xdg-desktop-portal]:   <https://wiki.gentoo.org/wiki/XDG/xdg-desktop-portal>
+[docs/xfs]:                  <https://wiki.gentoo.org/wiki/XFS>
+[docs/xorg]:                 <https://wiki.gentoo.org/wiki/Xorg>
+[docs/zsh]:                  <https://wiki.gentoo.org/wiki/Zsh>
+[docs/zswap]:                <https://wiki.gentoo.org/wiki/Zswap>
 
 <!-- * -->
 [limine.conf]:  <https://github.com/librazhd7/gentoo7/blob/main/boot/limine.conf>
