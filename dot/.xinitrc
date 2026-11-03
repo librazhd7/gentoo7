@@ -34,5 +34,4 @@ fi
 
 xrandr --setprovideroutputsource modesetting NVIDIA-0
 xrandr --auto
-#exec dbus-run-session -- icewm-session
-#exec dbus-launch --exit-with-session startplasma-x11
+exec dbus-run-session -- icewm-session
