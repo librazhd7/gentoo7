@@ -629,7 +629,7 @@ ollama run qwen3.6:27b
 [dracut.conf.d/dracut.conf]:  <https://github.com/librazhd7/gentoo7/blob/main/etc/dracut.conf.d/dracut.conf>
 [kernel/cmdline]:  <https://github.com/librazhd7/gentoo7/blob/main/etc/kernel/cmdline>
 [lvm/lvm.conf]:  <https://github.com/librazhd7/gentoo7/blob/main/etc/lvm/lvm.conf>
-[rules.d/49-wheel.rules] : <https://github.com/librazhd7/gentoo7/blob/main/etc/polkit-1/rules.d/49-wheel.rules>
+[rules.d/49-wheel.rules]: <https://github.com/librazhd7/gentoo7/blob/main/etc/polkit-1/rules.d/49-wheel.rules>
 [package.use/core]:  <https://github.com/librazhd7/gentoo7/blob/main/etc/portage/package.use/core>
 [package.use/steam]:  <https://github.com/librazhd7/gentoo7/blob/main/etc/portage/package.use/steam>
 [repos.conf/eselect-repo.conf]: <https://github.com/librazhd7/gentoo7/blob/main/etc/portage/repos.conf/eselect-repo.conf>
