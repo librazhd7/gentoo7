@@ -238,28 +238,6 @@ export PS1="(chroot) ${PS1}"
 > to speed up transfers in most cases: `bs=4096`                  \
 > to display transfers stats: `status=progress`
 
-> [!CAUTION]  
-> repo-specific file configurations and design choices are strictly made with hardware and preference(s) of mine in mind. \
-> read the sources listed throughout the guide for best practices to fully grasp the underlying concepts used throughout the guide
-> ```
-> # apply repo-specific configurations by cloning the repo and cd into it:
-> git clone https://github.com/76561198375997747/gentoo7.git
-> wget https://github.com/76561198375997747/gentoo7/archive/refs/heads/main.zip
-> cd gentoo7-main
->
-> # grant execute permission and run automated setup (unsafe, work in progress):
-> chmod +x ./setup.sh
-> ./setup.sh
->
-> # for @world set with wayland in mind (manual):
-> mv -i gentoo7-main/var/lib/portage/world-wl /var/lib/portage/world
->
-> # for @world set with x11 in mind (manual):
-> mv -i gentoo7-main/etc/X11/xorg.conf.d/20-intel.conf /etc/X11/xorg.conf.d/20-intel.conf
-> mv -i gentoo7-main/etc/X11/xorg.conf.d/40-libinput.conf /etc/X11/xorg.conf.d/40-libinput.conf
-> mv -i gentoo7-main/var/lib/portage/world-x11 /var/lib/portage/world
-> ```
-
 ---
 
 ### installing base system
@@ -510,6 +488,27 @@ emerge --ask app-misc/mcontrolcenter
 curl -fsSL https://ollama.com/install.sh | sh
 ollama run qwen3.6:27b
 ```
+
+> [!CAUTION]  
+> file configurations and design choices are strictly made with hardware and preference(s) of mine in mind. \
+> read the sources listed throughout the guide for best practices to fully grasp the underlying concepts used throughout the guide!
+> ```
+> # apply repo-specific configurations by cloning the repo and cd into it:
+> git clone https://github.com/librazhd7/gentoo7.git
+> wget https://github.com/librazhd7/gentoo7/archive/refs/heads/main.zip
+> cd gentoo7-main
+>
+> # grant execute permission and run automated setup (unsafe, work in progress):
+> chmod +x ./setup.sh && ./setup.sh
+>
+> # for @world set with wayland in mind (manual):
+> mv -i gentoo7-main/var/lib/portage/world_wayland /var/lib/portage/world
+>
+> # for @world set with x11 in mind (manual):
+> mv -i gentoo7-main/etc/X11/xorg.conf.d/20-intel.conf /etc/X11/xorg.conf.d/20-intel.conf
+> mv -i gentoo7-main/etc/X11/xorg.conf.d/40-libinput.conf /etc/X11/xorg.conf.d/40-libinput.conf
+> mv -i gentoo7-main/var/lib/portage/world_xorg /var/lib/portage/world
+> ```
 
 ---
 
