@@ -1,3 +1,4 @@
+*/*::hossie-overlay
 */*::steam-overlay
 */*::tatsh-overlay
 dev-qt/qtwebengine
