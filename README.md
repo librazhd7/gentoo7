@@ -49,54 +49,61 @@
 * intel ax201
 
 ### contents
-| system                                                    | purpose |
-|-----------------------------------------------------------|---------|
-| [`boot/EFI/BOOT/limine.conf`][url-repo-1]                 | n/a     |
-| [`boot/loader/loader.conf`][url-repo-2]                   | n/a     |
-| [`etc/X11/xorg.conf.d/20-intel.conf`][url-repo-3]         | n/a     |
-| [`etc/X11/xorg.conf.d/40-libinput.conf`][url-repo-4]      | n/a     |
-| [`etc/dracut.conf.d/dracut.conf`][url-repo-5]             | n/a     |
-| [`etc/kernel/cmdline`][url-repo-6]                        | n/a     |
-| [`etc/lvm/lvm.conf`][url-repo-7]                          | n/a     |
-| [`etc/portage/package.use/core`][url-repo-8]              | n/a     |
-| [`etc/portage/package.use/steam`][url-repo-9]             | n/a     |
-| [`etc/portage/repos.conf/eselect-repo.conf`][url-repo-10] | n/a     |
-| [`etc/portage/make.conf`][url-repo-11]                    | n/a     |
-| [`etc/portage/package.accept_keywords`][url-repo-12]      | n/a     |
-| [`etc/portage/package.license`][url-repo-13]              | n/a     |
-| [`etc/portage/package.mask`][url-repo-14]                 | n/a     |
-| [`etc/udev/rules.d/60-steam-input.rules`][url-repo-15]    | n/a     |
-| [`etc/udev/rules.d/60-steam-vr.rules`][url-repo-16]       | n/a     |
-| [`etc/udev/rules.d/80-nvidia-pm.rules`][url-repo-17]      | n/a     |
-| [`etc/dispatch-conf.conf`][url-repo-18]                   | n/a     |
-| [`etc/doas.conf`][url-repo-19]                            | n/a     |
-| [`etc/environment`][url-repo-20]                          | n/a     |
-| [`etc/fstab`][url-repo-21]                                | n/a     |
-| [`etc/hostname`][url-repo-22]                             | n/a     |
-| [`etc/hosts`][url-repo-23]                                | n/a     |
-| [`etc/locale.gen`][url-repo-24]                           | n/a     |
-| [`etc/vconsole.conf`][url-repo-25]                        | n/a     |
-| [`var/lib/portage/world-wl`][url-repo-26]                 | n/a     |
-| [`var/lib/portage/world-x11`][url-repo-27]                | n/a     |
+| system                                                                                                    | purpose |
+|-----------------------------------------------------------------------------------------------------------|---------|
+| [`boot/limine.conf`][limine.conf]                                                                         | n/a     |
+| [`boot/loader/loader.conf`][loader/loader.conf]                                                           | n/a     |
+| [`dot/.config/pipewire/pipewire.conf.d/99-input-denoising.conf`][pipewire.conf.d/99-input-denoising.conf] | n/a     |
+| [`dot/.config/xdg-desktop-portal/portals.conf`][xdg-desktop-portal/portals.conf]                          | n/a     |
+| [`dot/.xinitrc`][.xinitrc]                                                                                | n/a     |
+| [`dot/.zprofile`][.zprofile]                                                                              | n/a     |
+| [`dot/.zshrc`][.zshrc]                                                                                    | n/a     |
+| [`etc/X11/xorg.conf.d/20-intel.conf`][xorg.conf.d/20-intel.conf]                                          | n/a     |
+| [`etc/X11/xorg.conf.d/40-libinput.conf`][xorg.conf.d/40-libinput.conf]                                    | n/a     |
+| [`etc/dracut.conf.d/dracut.conf`][dracut.conf.d/dracut.conf]                                              | n/a     |
+| [`etc/kernel/cmdline`][kernel/cmdline]                                                                    | n/a     |
+| [`etc/lvm/lvm.conf`][lvm/lvm.conf]                                                                        | n/a     |
+| [`etc/portage/package.use/core`][package.use/core]                                                        | n/a     |
+| [`etc/portage/package.use/steam`][package.use/steam]                                                      | n/a     |
+| [`etc/portage/repos.conf/eselect-repo.conf`][repos.conf/eselect-repo.conf]                                | n/a     |
+| [`etc/portage/make.conf`][portage/make.conf]                                                              | n/a     |
+| [`etc/portage/package.accept_keywords`][portage/package.accept_keywords]                                  | n/a     |
+| [`etc/portage/package.license`][portage/package.license]                                                  | n/a     |
+| [`etc/portage/package.mask`][portage/package.mask]                                                        | n/a     |
+| [`etc/udev/rules.d/60-steam-input.rules`][rules.d/60-steam-input.rules]                                   | n/a     |
+| [`etc/udev/rules.d/60-steam-vr.rules`][rules.d/60-steam-vr.rules]                                         | n/a     |
+| [`etc/udev/rules.d/80-nvidia-pm.rules`][rules.d/80-nvidia-pm.rules]                                       | n/a     |
+| [`etc/dispatch-conf.conf`][dispatch-conf.conf]                                                            | n/a     |
+| [`etc/doas.conf`][doas.conf]                                                                              | n/a     |
+| [`etc/environment`][environment]                                                                          | n/a     |
+| [`etc/fstab`][fstab]                                                                                      | n/a     |
+| [`etc/hostname`][hostname]                                                                                | n/a     |
+| [`etc/hosts`][hosts]                                                                                      | n/a     |
+| [`etc/locale.gen`][locale.gen]                                                                            | n/a     |
+| [`etc/vconsole.conf`][vconsole.conf]                                                                      | n/a     |
+| [`sys/devices/platform/msi-ec/cooler-boost`][msi-ec/cooler-boost]                                         | n/a     |
+| [`sys/devices/platform/msi-ec/fan-mode`][msi-ec/fan-mode]                                                 | n/a     |
+| [`sys/devices/platform/msi-ec/fn-key`][msi-ec/fn-key]                                                     | n/a     |
+| [`sys/devices/platform/msi-ec/shift-mode`][msi-ec/shift-mode]                                             | n/a     |
+| [`sys/devices/platform/msi-ec/super-battery`][msi-ec/super-battery]                                       | n/a     |
+| [`sys/devices/platform/msi-ec/webcam`][msi-ec/webcam]                                                     | n/a     |
+| [`sys/devices/platform/msi-ec/webcam_block`][msi-ec/webcam-block]                                         | n/a     |
+| [`sys/devices/platform/msi-ec/win_key`][msi-ec/win-key]                                                   | n/a     |
+| [`var/lib/portage/world-wayland`][portage/world-wayland]                                                  | n/a     |
+| [`var/lib/portage/world-xorg`][portage/world-xorg]                                                        | n/a     |
 
-| dotfiles                                                                      | purpose |
-|-------------------------------------------------------------------------------|---------|
-| [`dot/.config/fontconfig/fonts.conf`][url-repo-28]                            | n/a     |
-| [`dot/.config/gammastep/config.ini`][url-repo-29]                             | n/a     |
-| [`dot/.config/gtk-3.0/settings.ini`][url-repo-30]                             | n/a     |
-| [`dot/.config/gtk-4.0/settings.ini`][url-repo-31]                             | n/a     |
-| [`dot/.config/idesktop/ideskrc`][url-repo-32]                                 | n/a     |
-| [`dot/.config/labwc/autostart`][url-repo-33]                                  | n/a     |
-| [`dot/.config/labwc/menu.xml`][url-repo-34]                                   | n/a     |
-| [`dot/.config/labwc/rc.xml`][url-repo-35]                                     | n/a     |
-| [`dot/.config/pipewire/pipewire.conf.d/99-input-denoising.conf`][url-repo-36] | n/a     |
-| [`dot/.config/sfwbar/sfwbar.config`][url-repo-37]                             | n/a     |
-| [`dot/.config/xdg-desktop-portal/portals.conf`][url-repo-38]                  | n/a     |
-| [`dot/.gtkrc-2.0`][url-repo-39]                                               | n/a     |
-| [`dot/.xinitrc`][url-repo-40]                                                 | n/a     |
-| [`dot/.xsession`][url-repo-41]                                                | n/a     |
-| [`dot/.zprofile`][url-repo-42]                                                | n/a     |
-| [`dot/.zshrc`][url-repo-43]                                                   | n/a     |
+| dotfiles                                                     | purpose |
+|--------------------------------------------------------------|---------|
+| [`dot/.config/fontconfig/fonts.conf`][fontconfig/fonts.conf] | n/a     |
+| [`dot/.config/gammastep/config.ini`][gammastep/config.ini]   | n/a     |
+| [`dot/.config/gtk-3.0/settings.ini`][gtk-3.0/settings.ini]   | n/a     |
+| [`dot/.config/gtk-4.0/settings.ini`][gtk-4.0/settings.ini]   | n/a     |
+| [`dot/.config/idesktop/ideskrc`][ideskrc]                    | n/a     |
+| [`dot/.config/labwc/autostart`][labwc/autostart]             | n/a     |
+| [`dot/.config/labwc/menu.xml`][labwc/menu]                   | n/a     |
+| [`dot/.config/labwc/rc.xml`][labwc/rc]                       | n/a     |
+| [`dot/.config/sfwbar/sfwbar.config`][sfwbar/sfwbar.config]   | n/a     |
+| [`dot/.gtkrc-2.0`][.gtkrc-2.0]                               | n/a     |
 
 ---
 
@@ -516,148 +523,155 @@ ollama run qwen3.6:27b
 - document commands more and why they're issued
 
 ### docs
-- [__acpi__][url-acpi]
-- [__alsa__][url-alsa]
-- [__backlight__][url-backlight] (arch)
-- [__bash__][url-bash]
-- [__bluetooth__][url-bluetooth]
-- [__dispatch-conf__][url-dispatch-conf]
-- [__dnsmasq__][url-dnsmasq]
-- [__dracut__][url-dracut]
-- [__eselect__][url-eselect]
-- [__fonts__][url-fonts]
-- [__fwupd__][url-fwupd]
-- [__gamescope__][url-gamescope] (arch)
-- [__gcc optimization__][url-gcc-optimization]
-- [__gentoolkit__][url-gentoolkit]
-- [__git__][url-git]
-- [__guru__][url-guru]
-- [__hybrid graphics__][url-hybrid-graphics]
-- [__libinput__][url-libinput]
-- [__libvirt__][url-libvirt]
-- [__lto__][url-lto]
-- [__networkmanager__][url-networkmanager]
-- [__nvidia-drivers__][url-nvidia-drivers]
-- [__optimus__][url-optimus]
-- [__pipewire__][url-pipewire]
-- [__power management__][url-power-management]
-- [__printing__][url-printing]
-- [__qemu__][url-qemu]
-- [__rust__][url-rust]
-- [__safe cflags__][url-safe-cflags]
-- [__samba__][url-samba]
-- [__secure boot__][url-secureboot]
-- [__ssh__][url-ssh]
-- [__steam__][url-steam]
-- [__tmpfs__][url-tmpfs]
-- [__tpm__][url-tpm]
-- [__udev__][url-udev]
-- [__unified kernel image__][url-unified-kernel-image]
-- [__wine__][url-wine]
-- [__xdg-desktop-portal__][url-xdg-desktop-portal]
-- [__xfs__][url-xfs]
-- [__xorg__][url-xorg]
-- [__zsh__][url-zsh]
-- [__zswap__][url-zswap]
+- [__acpi__][docs/acpi]
+- [__alsa__][docs/alsa]
+- [__backlight__][docs/backlight] (arch)
+- [__bash__][docs/bash]
+- [__bluetooth__][docs/bluetooth]
+- [__dispatch-conf__][docs/dispatch-conf]
+- [__dnsmasq__][docs/dnsmasq]
+- [__dracut__][docs/dracut]
+- [__eselect__][docs/eselect]
+- [__fonts__][docs/fonts]
+- [__fwupd__][docs/fwupd]
+- [__gamescope__][docs/gamescope] (arch)
+- [__gcc optimization__][docs/gcc-optimization]
+- [__gentoolkit__][docs/gentoolkit]
+- [__git__][docs/git]
+- [__guru__][docs/guru]
+- [__hybrid graphics__][docs/hybrid-graphics]
+- [__libinput__][docs/libinput]
+- [__libvirt__][docs/ibvirt]
+- [__lto__][docs/lto]
+- [__networkmanager__][docs/networkmanager]
+- [__nvidia-drivers__][docs/nvidia-drivers]
+- [__optimus__][docs/optimus]
+- [__pipewire__][docs/pipewire]
+- [__power management__][docs/power-management]
+- [__printing__][docs/printing]
+- [__qemu__][docs/qemu]
+- [__rust__][docs/rust]
+- [__safe cflags__][docs/safe-cflags]
+- [__samba__][docs/samba]
+- [__secure boot__][docs/secureboot]
+- [__ssh__][docs/ssh]
+- [__steam__][docs/steam]
+- [__tmpfs__][docs/tmpfs]
+- [__tpm__][docs/tpm]
+- [__udev__][docs/udev]
+- [__unified kernel image__][docs/unified-kernel-image]
+- [__wine__][docs/wine]
+- [__xdg-desktop-portal__][docs/xdg-desktop-portal]
+- [__xfs__][docs/xfs]
+- [__xorg__][docs/xorg]
+- [__zsh__][docs/zsh]
+- [__zswap__][docs/zswap]
 
 <!-- docs -->
-[url-acpi]:                 <https://wiki.gentoo.org/wiki/ACPI>
-[url-alsa]:                 <https://wiki.gentoo.org/wiki/ALSA>
-[url-backlight]:            <https://wiki.archlinux.org/title/Backlight>
-[url-bash]:                 <https://wiki.gentoo.org/wiki/Bash>
-[url-bluetooth]:            <https://wiki.gentoo.org/wiki/Bluetooth>
-[url-dispatch-conf]:        <https://wiki.gentoo.org/wiki/Dispatch-conf>
-[url-dnsmasq]:              <https://wiki.gentoo.org/wiki/Dnsmasq>
-[url-dracut]:               <https://wiki.gentoo.org/wiki/Dracut>
-[url-eselect]:              <https://wiki.gentoo.org/wiki/Eselect>
-[url-fonts]:                <https://wiki.gentoo.org/wiki/Fonts>
-[url-fwupd]:                <https://wiki.gentoo.org/wiki/Fwupd>
-[url-gamescope]:            <https://wiki.archlinux.org/title/Gamescope>
-[url-gcc-optimization]:     <https://wiki.gentoo.org/wiki/GCC_optimization>
-[url-gentoolkit]:           <https://wiki.gentoo.org/wiki/Gentoolkit>
-[url-git]:                  <https://wiki.gentoo.org/wiki/Git>
-[url-guru]:                 <https://wiki.gentoo.org/wiki/Project:GURU>
-[url-hybrid-graphics]:      <https://wiki.gentoo.org/wiki/Hybrid_graphics>
-[url-intel]:                <https://wiki.gentoo.org/wiki/Intel>
-[url-kernel]:               <https://wiki.gentoo.org/wiki/Kernel>
-[url-libinput]:             <https://wiki.gentoo.org/wiki/Libinput>
-[url-libvirt]:              <https://wiki.gentoo.org/wiki/Libvirt>
-[url-linux-firmware]:       <https://wiki.gentoo.org/wiki/Linux_firmware>
-[url-lto]:                  <https://wiki.gentoo.org/wiki/LTO>
-[url-lvm]:                  <https://wiki.gentoo.org/wiki/LVM>
-[url-microcode]:            <https://wiki.gentoo.org/wiki/Microcode>
-[url-networkmanager]:       <https://wiki.gentoo.org/wiki/NetworkManager>
-[url-nvidia-drivers]:       <https://wiki.gentoo.org/wiki/NVIDIA/nvidia-drivers>
-[url-optimus]:              <https://wiki.gentoo.org/wiki/NVIDIA/Optimus>
-[url-pipewire]:             <https://wiki.gentoo.org/wiki/PipeWire>
-[url-power-management]:     <https://wiki.gentoo.org/wiki/Power_management>
-[url-printing]:             <https://wiki.gentoo.org/wiki/Printing>
-[url-qemu]:                 <https://wiki.gentoo.org/wiki/QEMU>
-[url-rust]:                 <https://wiki.gentoo.org/wiki/Rust>
-[url-safe-cflags]:          <https://wiki.gentoo.org/wiki/Safe_CFLAGS>
-[url-samba]:                <https://wiki.gentoo.org/wiki/Samba>
-[url-secureboot]:           <https://wiki.gentoo.org/wiki/Secure_Boot>
-[url-ssh]:                  <https://wiki.gentoo.org/wiki/SSH>
-[url-steam]:                <https://wiki.gentoo.org/wiki/Steam>
-[url-swap]:                 <https://wiki.gentoo.org/wiki/Swap>
-[url-systemd]:              <https://wiki.gentoo.org/wiki/Systemd>
-[url-systemd-boot]:         <https://wiki.gentoo.org/wiki/Systemd/systemd-boot>
-[url-tmpfs]:                <https://wiki.gentoo.org/wiki/Portage_TMPDIR_on_tmpfs>
-[url-tpm]:                  <https://wiki.gentoo.org/wiki/Trusted_Platform_Module>
-[url-udev]:                 <https://wiki.gentoo.org/wiki/Udev>
-[url-uefi]:                 <https://wiki.gentoo.org/wiki/UEFI>
-[url-unified-kernel-image]: <https://wiki.gentoo.org/wiki/Unified_kernel_image>
-[url-wine]:                 <https://wiki.gentoo.org/wiki/Wine>
-[url-xdg-desktop-portal]:   <https://wiki.gentoo.org/wiki/XDG/xdg-desktop-portal>
-[url-xfs]:                  <https://wiki.gentoo.org/wiki/XFS>
-[url-xorg]:                 <https://wiki.gentoo.org/wiki/Xorg>
-[url-zsh]:                  <https://wiki.gentoo.org/wiki/Zsh>
-[url-zswap]:                <https://wiki.gentoo.org/wiki/Zswap>
+[url/acpi]:                 <https://wiki.gentoo.org/wiki/ACPI>
+[url/alsa]:                 <https://wiki.gentoo.org/wiki/ALSA>
+[url/backlight]:            <https://wiki.archlinux.org/title/Backlight>
+[url/bash]:                 <https://wiki.gentoo.org/wiki/Bash>
+[url/bluetooth]:            <https://wiki.gentoo.org/wiki/Bluetooth>
+[url/dispatch-conf]:        <https://wiki.gentoo.org/wiki/Dispatch-conf>
+[url/dnsmasq]:              <https://wiki.gentoo.org/wiki/Dnsmasq>
+[url/dracut]:               <https://wiki.gentoo.org/wiki/Dracut>
+[url/eselect]:              <https://wiki.gentoo.org/wiki/Eselect>
+[url/fonts]:                <https://wiki.gentoo.org/wiki/Fonts>
+[url/fwupd]:                <https://wiki.gentoo.org/wiki/Fwupd>
+[url/gamescope]:            <https://wiki.archlinux.org/title/Gamescope>
+[url/gcc-optimization]:     <https://wiki.gentoo.org/wiki/GCC_optimization>
+[url/gentoolkit]:           <https://wiki.gentoo.org/wiki/Gentoolkit>
+[url/git]:                  <https://wiki.gentoo.org/wiki/Git>
+[url/guru]:                 <https://wiki.gentoo.org/wiki/Project:GURU>
+[url/hybrid-graphics]:      <https://wiki.gentoo.org/wiki/Hybrid_graphics>
+[url/intel]:                <https://wiki.gentoo.org/wiki/Intel>
+[url/kernel]:               <https://wiki.gentoo.org/wiki/Kernel>
+[url/libinput]:             <https://wiki.gentoo.org/wiki/Libinput>
+[url/libvirt]:              <https://wiki.gentoo.org/wiki/Libvirt>
+[url/linux-firmware]:       <https://wiki.gentoo.org/wiki/Linux_firmware>
+[url/lto]:                  <https://wiki.gentoo.org/wiki/LTO>
+[url/lvm]:                  <https://wiki.gentoo.org/wiki/LVM>
+[url/microcode]:            <https://wiki.gentoo.org/wiki/Microcode>
+[url/networkmanager]:       <https://wiki.gentoo.org/wiki/NetworkManager>
+[url/nvidia-drivers]:       <https://wiki.gentoo.org/wiki/NVIDIA/nvidia-drivers>
+[url/optimus]:              <https://wiki.gentoo.org/wiki/NVIDIA/Optimus>
+[url/pipewire]:             <https://wiki.gentoo.org/wiki/PipeWire>
+[url/power-management]:     <https://wiki.gentoo.org/wiki/Power_management>
+[url/printing]:             <https://wiki.gentoo.org/wiki/Printing>
+[url/qemu]:                 <https://wiki.gentoo.org/wiki/QEMU>
+[url/rust]:                 <https://wiki.gentoo.org/wiki/Rust>
+[url/safe-cflags]:          <https://wiki.gentoo.org/wiki/Safe_CFLAGS>
+[url/samba]:                <https://wiki.gentoo.org/wiki/Samba>
+[url/secureboot]:           <https://wiki.gentoo.org/wiki/Secure_Boot>
+[url/ssh]:                  <https://wiki.gentoo.org/wiki/SSH>
+[url/steam]:                <https://wiki.gentoo.org/wiki/Steam>
+[url/swap]:                 <https://wiki.gentoo.org/wiki/Swap>
+[url/systemd]:              <https://wiki.gentoo.org/wiki/Systemd>
+[url/systemd-boot]:         <https://wiki.gentoo.org/wiki/Systemd/systemd-boot>
+[url/tmpfs]:                <https://wiki.gentoo.org/wiki/Portage_TMPDIR_on_tmpfs>
+[url/tpm]:                  <https://wiki.gentoo.org/wiki/Trusted_Platform_Module>
+[url/udev]:                 <https://wiki.gentoo.org/wiki/Udev>
+[url/uefi]:                 <https://wiki.gentoo.org/wiki/UEFI>
+[url/unified-kernel-image]: <https://wiki.gentoo.org/wiki/Unified_kernel_image>
+[url/wine]:                 <https://wiki.gentoo.org/wiki/Wine>
+[url/xdg-desktop-portal]:   <https://wiki.gentoo.org/wiki/XDG/xdg-desktop-portal>
+[url/xfs]:                  <https://wiki.gentoo.org/wiki/XFS>
+[url/xorg]:                 <https://wiki.gentoo.org/wiki/Xorg>
+[url/zsh]:                  <https://wiki.gentoo.org/wiki/Zsh>
+[url/zswap]:                <https://wiki.gentoo.org/wiki/Zswap>
 
-<!-- -->
-[url-repo-1]:  <https://github.com/librazhd7/gentoo7/blob/main/boot/EFI/BOOT/limine.conf>
-[url-repo-2]:  <https://github.com/librazhd7/gentoo7/blob/main/boot/loader/loader.conf>
-[url-repo-3]:  <https://github.com/librazhd7/gentoo7/blob/main/etc/X11/xorg.conf.d/20-intel.conf>
-[url-repo-4]:  <https://github.com/librazhd7/gentoo7/blob/main/etc/X11/xorg.conf.d/40-libinput.conf>
-[url-repo-5]:  <https://github.com/librazhd7/gentoo7/blob/main/etc/dracut.conf.d/dracut.conf>
-[url-repo-6]:  <https://github.com/librazhd7/gentoo7/blob/main/etc/kernel/cmdline>
-[url-repo-7]:  <https://github.com/librazhd7/gentoo7/blob/main/etc/lvm/lvm.conf>
-[url-repo-8]:  <https://github.com/librazhd7/gentoo7/blob/main/etc/portage/package.use/core>
-[url-repo-9]:  <https://github.com/librazhd7/gentoo7/blob/main/etc/portage/package.use/steam>
-[url-repo-10]: <https://github.com/librazhd7/gentoo7/blob/main/etc/portage/repos.conf/eselect-repo.conf>
-[url-repo-11]: <https://github.com/librazhd7/gentoo7/blob/main/etc/portage/make.conf>
-[url-repo-12]: <https://github.com/librazhd7/gentoo7/blob/main/etc/portage/package.accept_keywords>
-[url-repo-13]: <https://github.com/librazhd7/gentoo7/blob/main/etc/portage/package.license>
-[url-repo-14]: <https://github.com/librazhd7/gentoo7/blob/main/etc/portage/package.mask>
-[url-repo-15]: <https://github.com/librazhd7/gentoo7/blob/main/etc/udev/rules.d/60-steam-input.rules>
-[url-repo-16]: <https://github.com/librazhd7/gentoo7/blob/main/etc/udev/rules.d/60-steam-vr.rules>
-[url-repo-17]: <https://github.com/librazhd7/gentoo7/blob/main/etc/udev/rules.d/80-nvidia-pm.rules>
-[url-repo-18]: <https://github.com/librazhd7/gentoo7/blob/main/etc/dispatch-conf.conf>
-[url-repo-19]: <https://github.com/librazhd7/gentoo7/blob/main/etc/doas.conf>
-[url-repo-20]: <https://github.com/librazhd7/gentoo7/blob/main/etc/environment>
-[url-repo-21]: <https://github.com/librazhd7/gentoo7/blob/main/etc/fstab>
-[url-repo-22]: <https://github.com/librazhd7/gentoo7/blob/main/etc/hostname>
-[url-repo-23]: <https://github.com/librazhd7/gentoo7/blob/main/etc/hosts>
-[url-repo-24]: <https://github.com/librazhd7/gentoo7/blob/main/etc/locale.gen>
-[url-repo-25]: <https://github.com/librazhd7/gentoo7/blob/main/etc/vconsole.conf>
-[url-repo-26]: <https://github.com/librazhd7/gentoo7/blob/main/var/lib/portage/world-wl>
-[url-repo-27]: <https://github.com/librazhd7/gentoo7/blob/main/var/lib/portage/world-x11>
-[url-repo-28]: <https://github.com/librazhd7/gentoo7/blob/main/dot/.config/fontconfig/fonts.conf>
-[url-repo-29]: <https://github.com/librazhd7/gentoo7/blob/main/dot/.config/gammastep/config.ini>
-[url-repo-30]: <https://github.com/librazhd7/gentoo7/blob/main/dot/.config/gtk-3.0/settings.ini>
-[url-repo-31]: <https://github.com/librazhd7/gentoo7/blob/main/dot/.config/gtk-4.0/settings.ini>
-[url-repo-32]: <https://github.com/librazhd7/gentoo7/blob/main/dot/.config/idesktop/ideskrc>
-[url-repo-33]: <https://github.com/librazhd7/gentoo7/blob/main/dot/.config/labwc/autostart>
-[url-repo-34]: <https://github.com/librazhd7/gentoo7/blob/main/dot/.config/labwc/menu.xml>
-[url-repo-35]: <https://github.com/librazhd7/gentoo7/blob/main/dot/.config/labwc/rc.xml>
-[url-repo-36]: <https://github.com/librazhd7/gentoo7/blob/main/dot/.config/pipewire/pipewire.conf.d/99-input-denoising.conf>
-[url-repo-37]: <https://github.com/librazhd7/gentoo7/blob/main/dot/.config/sfwbar/sfwbar.config>
-[url-repo-38]: <https://github.com/librazhd7/gentoo7/blob/main/dot/.config/xdg-desktop-portal/portals.conf>
-[url-repo-39]: <https://github.com/librazhd7/gentoo7/blob/main/dot/.gtkrc-2.0>
-[url-repo-40]: <https://github.com/librazhd7/gentoo7/blob/main/dot/.xinitrc>
-[url-repo-41]: <https://github.com/librazhd7/gentoo7/blob/main/dot/.xsession>
-[url-repo-42]: <https://github.com/librazhd7/gentoo7/blob/main/dot/.zprofile>
-[url-repo-43]: <https://github.com/librazhd7/gentoo7/blob/main/dot/.zshrc>
+<!-- * -->
+[limine.conf]:  <https://github.com/librazhd7/gentoo7/blob/main/boot/limine.conf>
+[loader/loader.conf]:  <https://github.com/librazhd7/gentoo7/blob/main/boot/loader/loader.conf>
+[xorg.conf.d/20-intel.conf]:  <https://github.com/librazhd7/gentoo7/blob/main/etc/X11/xorg.conf.d/20-intel.conf>
+[xorg.conf.d/40-libinput.conf]:  <https://github.com/librazhd7/gentoo7/blob/main/etc/X11/xorg.conf.d/40-libinput.conf>
+[dracut.conf.d/dracut.conf]:  <https://github.com/librazhd7/gentoo7/blob/main/etc/dracut.conf.d/dracut.conf>
+[kernel/cmdline]:  <https://github.com/librazhd7/gentoo7/blob/main/etc/kernel/cmdline>
+[lvm/lvm.conf]:  <https://github.com/librazhd7/gentoo7/blob/main/etc/lvm/lvm.conf>
+[package.use/core]:  <https://github.com/librazhd7/gentoo7/blob/main/etc/portage/package.use/core>
+[package.use/steam]:  <https://github.com/librazhd7/gentoo7/blob/main/etc/portage/package.use/steam>
+[repos.conf/eselect-repo.conf]: <https://github.com/librazhd7/gentoo7/blob/main/etc/portage/repos.conf/eselect-repo.conf>
+[portage/make.conf]: <https://github.com/librazhd7/gentoo7/blob/main/etc/portage/make.conf>
+[portage/package.accept_keywords]: <https://github.com/librazhd7/gentoo7/blob/main/etc/portage/package.accept_keywords>
+[portage/package.license>]: <https://github.com/librazhd7/gentoo7/blob/main/etc/portage/package.license>
+[portage/package.mask]: <https://github.com/librazhd7/gentoo7/blob/main/etc/portage/package.mask>
+[rules.d/60-steam-input.rules]: <https://github.com/librazhd7/gentoo7/blob/main/etc/udev/rules.d/60-steam-input.rules>
+[rules.d/60-steam-vr.rules]: <https://github.com/librazhd7/gentoo7/blob/main/etc/udev/rules.d/60-steam-vr.rules>
+[rules.d/80-nvidia-pm.rules]: <https://github.com/librazhd7/gentoo7/blob/main/etc/udev/rules.d/80-nvidia-pm.rules>
+[dispatch-conf.conf]: <https://github.com/librazhd7/gentoo7/blob/main/etc/dispatch-conf.conf>
+[doas.conf]: <https://github.com/librazhd7/gentoo7/blob/main/etc/doas.conf>
+[environment]: <https://github.com/librazhd7/gentoo7/blob/main/etc/environment>
+[fstab]: <https://github.com/librazhd7/gentoo7/blob/main/etc/fstab>
+[hostname]: <https://github.com/librazhd7/gentoo7/blob/main/etc/hostname>
+[hosts]: <https://github.com/librazhd7/gentoo7/blob/main/etc/hosts>
+[locale.gen]: <https://github.com/librazhd7/gentoo7/blob/main/etc/locale.gen>
+[vconsole.conf]: <https://github.com/librazhd7/gentoo7/blob/main/etc/vconsole.conf>
+[portage/world-wayland]: <https://github.com/librazhd7/gentoo7/blob/main/var/lib/portage/world-wayland>
+[portage/world-xorg]: <https://github.com/librazhd7/gentoo7/blob/main/var/lib/portage/world-xorg>
+[fontconfig/fonts.conf]: <https://github.com/librazhd7/gentoo7/blob/main/dot/.config/fontconfig/fonts.conf>
+[gammastep/config.ini]: <https://github.com/librazhd7/gentoo7/blob/main/dot/.config/gammastep/config.ini>
+[gtk-3.0/settings.ini]: <https://github.com/librazhd7/gentoo7/blob/main/dot/.config/gtk-3.0/settings.ini>
+[gtk-4.0/settings.ini]: <https://github.com/librazhd7/gentoo7/blob/main/dot/.config/gtk-4.0/settings.ini>
+[idesktop/ideskrc]: <https://github.com/librazhd7/gentoo7/blob/main/dot/.config/idesktop/ideskrc>
+[labwc/autostart]: <https://github.com/librazhd7/gentoo7/blob/main/dot/.config/labwc/autostart>
+[labwc/menu.xml]: <https://github.com/librazhd7/gentoo7/blob/main/dot/.config/labwc/menu.xml>
+[labwc/rc.xml]: <https://github.com/librazhd7/gentoo7/blob/main/dot/.config/labwc/rc.xml>
+[pipewire.conf.d/99-input-denoising.conf]: <https://github.com/librazhd7/gentoo7/blob/main/dot/.config/pipewire/pipewire.conf.d/99-input-denoising.conf>
+[sfwbar/sfwbar.config]: <https://github.com/librazhd7/gentoo7/blob/main/dot/.config/sfwbar/sfwbar.config>
+[xdg-desktop-portal/portals.conf]: <https://github.com/librazhd7/gentoo7/blob/main/dot/.config/xdg-desktop-portal/portals.conf>
+[.gtkrc-2.0]: <https://github.com/librazhd7/gentoo7/blob/main/dot/.gtkrc-2.0>
+[.xinitrc]: <https://github.com/librazhd7/gentoo7/blob/main/dot/.xinitrc>
+[.zprofile]: <https://github.com/librazhd7/gentoo7/blob/main/dot/.zprofile>
+[.zshrc]: <https://github.com/librazhd7/gentoo7/blob/main/dot/.zshrc>
+[msi-ec/cooler-boost]: <https://github.com/librazhd7/gentoo7/blob/main/sys/devices/platform/msi-ec/cooler-boost>
+[msi-ec/fan-mode]: <https://github.com/librazhd7/gentoo7/blob/main/sys/devices/platform/msi-ec/fan-mode>
+[msi-ec/fn-key]: <https://github.com/librazhd7/gentoo7/blob/main/sys/devices/platform/msi-ec/fn-key>
+[msi-ec/shift-mode]: <https://github.com/librazhd7/gentoo7/blob/main/sys/devices/platform/msi-ec/shift-mode>
+[msi-ec/super-battery]: <https://github.com/librazhd7/gentoo7/blob/main/sys/devices/platform/msi-ec/super-battery>
+[msi-ec/webcam]: <https://github.com/librazhd7/gentoo7/blob/main/sys/devices/platform/msi-ec/webcam>
+[msi-ec/webcam-block]: <https://github.com/librazhd7/gentoo7/blob/main/sys/devices/platform/msi-ec/webcam-block>
+[msi-ec/win-key]:<https://github.com/librazhd7/gentoo7/blob/main/sys/devices/platform/msi-ec/win-key>
 
 __made with__ ❤️
 
