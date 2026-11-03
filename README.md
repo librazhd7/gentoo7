@@ -47,7 +47,7 @@
 * samsung ddr5 (16gb)
 * micron 2400 mtfdkba512qfm nvme (512gb)
 * intel ax201
-
+etc/polkit-1/rules.d/49-wheel.rules
 ### contents
 | system                                                                                                    | purpose |
 |-----------------------------------------------------------------------------------------------------------|---------|
@@ -63,6 +63,7 @@
 | [`etc/dracut.conf.d/dracut.conf`][dracut.conf.d/dracut.conf]                                              | n/a     |
 | [`etc/kernel/cmdline`][kernel/cmdline]                                                                    | n/a     |
 | [`etc/lvm/lvm.conf`][lvm/lvm.conf]                                                                        | n/a     |
+| [`etc/polkit-1/rules.d/49-wheel.rules`][rules.d/49-wheel.rules]                                           | n/a     |
 | [`etc/portage/package.use/core`][package.use/core]                                                        | n/a     |
 | [`etc/portage/package.use/steam`][package.use/steam]                                                      | n/a     |
 | [`etc/portage/repos.conf/eselect-repo.conf`][repos.conf/eselect-repo.conf]                                | n/a     |
@@ -98,10 +99,10 @@
 | [`dot/.config/gammastep/config.ini`][gammastep/config.ini]   | n/a     |
 | [`dot/.config/gtk-3.0/settings.ini`][gtk-3.0/settings.ini]   | n/a     |
 | [`dot/.config/gtk-4.0/settings.ini`][gtk-4.0/settings.ini]   | n/a     |
-| [`dot/.config/idesktop/ideskrc`][ideskrc]                    | n/a     |
-| [`dot/.config/labwc/autostart`][labwc/autostart]             | n/a     |
-| [`dot/.config/labwc/menu.xml`][labwc/menu]                   | n/a     |
-| [`dot/.config/labwc/rc.xml`][labwc/rc]                       | n/a     |
+| [`dot/.config/idesktop/ideskrc`][idesktop/ideskrc]           | n/a     |
+| [`dot/.config/labwc/autostart`][labwc/autostart.xml]         | n/a     |
+| [`dot/.config/labwc/menu.xml`][labwc/menu.xml]               | n/a     |
+| [`dot/.config/labwc/rc.xml`][labwc/rc.xml]                   | n/a     |
 | [`dot/.config/sfwbar/sfwbar.config`][sfwbar/sfwbar.config]   | n/a     |
 | [`dot/.gtkrc-2.0`][.gtkrc-2.0]                               | n/a     |
 
@@ -628,6 +629,7 @@ ollama run qwen3.6:27b
 [dracut.conf.d/dracut.conf]:  <https://github.com/librazhd7/gentoo7/blob/main/etc/dracut.conf.d/dracut.conf>
 [kernel/cmdline]:  <https://github.com/librazhd7/gentoo7/blob/main/etc/kernel/cmdline>
 [lvm/lvm.conf]:  <https://github.com/librazhd7/gentoo7/blob/main/etc/lvm/lvm.conf>
+[rules.d/49-wheel.rules] : <https://github.com/librazhd7/gentoo7/blob/main/etc/polkit-1/rules.d/49-wheel.rules>
 [package.use/core]:  <https://github.com/librazhd7/gentoo7/blob/main/etc/portage/package.use/core>
 [package.use/steam]:  <https://github.com/librazhd7/gentoo7/blob/main/etc/portage/package.use/steam>
 [repos.conf/eselect-repo.conf]: <https://github.com/librazhd7/gentoo7/blob/main/etc/portage/repos.conf/eselect-repo.conf>
