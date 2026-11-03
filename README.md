@@ -81,16 +81,16 @@
 | [`etc/hosts`][hosts]                                                                                      | n/a     |
 | [`etc/locale.gen`][locale.gen]                                                                            | n/a     |
 | [`etc/vconsole.conf`][vconsole.conf]                                                                      | n/a     |
-| [`sys/devices/platform/msi-ec/cooler-boost`][msi-ec/cooler-boost]                                         | n/a     |
-| [`sys/devices/platform/msi-ec/fan-mode`][msi-ec/fan-mode]                                                 | n/a     |
-| [`sys/devices/platform/msi-ec/fn-key`][msi-ec/fn-key]                                                     | n/a     |
-| [`sys/devices/platform/msi-ec/shift-mode`][msi-ec/shift-mode]                                             | n/a     |
-| [`sys/devices/platform/msi-ec/super-battery`][msi-ec/super-battery]                                       | n/a     |
+| [`sys/devices/platform/msi-ec/cooler-boost`][msi-ec/cooler_boost]                                         | n/a     |
+| [`sys/devices/platform/msi-ec/fan-mode`][msi-ec/fan_mode]                                                 | n/a     |
+| [`sys/devices/platform/msi-ec/fn-key`][msi-ec/fn_key]                                                     | n/a     |
+| [`sys/devices/platform/msi-ec/shift-mode`][msi-ec/shift_mode]                                             | n/a     |
+| [`sys/devices/platform/msi-ec/super-battery`][msi-ec/super_battery]                                       | n/a     |
 | [`sys/devices/platform/msi-ec/webcam`][msi-ec/webcam]                                                     | n/a     |
-| [`sys/devices/platform/msi-ec/webcam_block`][msi-ec/webcam-block]                                         | n/a     |
-| [`sys/devices/platform/msi-ec/win_key`][msi-ec/win-key]                                                   | n/a     |
-| [`var/lib/portage/world-wayland`][portage/world-wayland]                                                  | n/a     |
-| [`var/lib/portage/world-xorg`][portage/world-xorg]                                                        | n/a     |
+| [`sys/devices/platform/msi-ec/webcam_block`][msi-ec/webcam_block]                                         | n/a     |
+| [`sys/devices/platform/msi-ec/win_key`][msi-ec/win_key]                                                   | n/a     |
+| [`var/lib/portage/world_wayland`][portage/world_wayland]                                                  | n/a     |
+| [`var/lib/portage/world_xorg`][portage/world_xorg]                                                        | n/a     |
 
 | dotfiles                                                     | purpose |
 |--------------------------------------------------------------|---------|
@@ -634,7 +634,7 @@ ollama run qwen3.6:27b
 [repos.conf/eselect-repo.conf]: <https://github.com/librazhd7/gentoo7/blob/main/etc/portage/repos.conf/eselect-repo.conf>
 [portage/make.conf]: <https://github.com/librazhd7/gentoo7/blob/main/etc/portage/make.conf>
 [portage/package.accept_keywords]: <https://github.com/librazhd7/gentoo7/blob/main/etc/portage/package.accept_keywords>
-[portage/package.license>]: <https://github.com/librazhd7/gentoo7/blob/main/etc/portage/package.license>
+[portage/package.license]: <https://github.com/librazhd7/gentoo7/blob/main/etc/portage/package.license>
 [portage/package.mask]: <https://github.com/librazhd7/gentoo7/blob/main/etc/portage/package.mask>
 [rules.d/60-steam-input.rules]: <https://github.com/librazhd7/gentoo7/blob/main/etc/udev/rules.d/60-steam-input.rules>
 [rules.d/60-steam-vr.rules]: <https://github.com/librazhd7/gentoo7/blob/main/etc/udev/rules.d/60-steam-vr.rules>
@@ -647,8 +647,8 @@ ollama run qwen3.6:27b
 [hosts]: <https://github.com/librazhd7/gentoo7/blob/main/etc/hosts>
 [locale.gen]: <https://github.com/librazhd7/gentoo7/blob/main/etc/locale.gen>
 [vconsole.conf]: <https://github.com/librazhd7/gentoo7/blob/main/etc/vconsole.conf>
-[portage/world-wayland]: <https://github.com/librazhd7/gentoo7/blob/main/var/lib/portage/world-wayland>
-[portage/world-xorg]: <https://github.com/librazhd7/gentoo7/blob/main/var/lib/portage/world-xorg>
+[portage/world_wayland]: <https://github.com/librazhd7/gentoo7/blob/main/var/lib/portage/world_wayland>
+[portage/world_xorg]: <https://github.com/librazhd7/gentoo7/blob/main/var/lib/portage/world_xorg>
 [fontconfig/fonts.conf]: <https://github.com/librazhd7/gentoo7/blob/main/dot/.config/fontconfig/fonts.conf>
 [gammastep/config.ini]: <https://github.com/librazhd7/gentoo7/blob/main/dot/.config/gammastep/config.ini>
 [gtk-3.0/settings.ini]: <https://github.com/librazhd7/gentoo7/blob/main/dot/.config/gtk-3.0/settings.ini>
@@ -664,14 +664,14 @@ ollama run qwen3.6:27b
 [.xinitrc]: <https://github.com/librazhd7/gentoo7/blob/main/dot/.xinitrc>
 [.zprofile]: <https://github.com/librazhd7/gentoo7/blob/main/dot/.zprofile>
 [.zshrc]: <https://github.com/librazhd7/gentoo7/blob/main/dot/.zshrc>
-[msi-ec/cooler-boost]: <https://github.com/librazhd7/gentoo7/blob/main/sys/devices/platform/msi-ec/cooler-boost>
-[msi-ec/fan-mode]: <https://github.com/librazhd7/gentoo7/blob/main/sys/devices/platform/msi-ec/fan-mode>
-[msi-ec/fn-key]: <https://github.com/librazhd7/gentoo7/blob/main/sys/devices/platform/msi-ec/fn-key>
-[msi-ec/shift-mode]: <https://github.com/librazhd7/gentoo7/blob/main/sys/devices/platform/msi-ec/shift-mode>
-[msi-ec/super-battery]: <https://github.com/librazhd7/gentoo7/blob/main/sys/devices/platform/msi-ec/super-battery>
+[msi-ec/cooler_boost]: <https://github.com/librazhd7/gentoo7/blob/main/sys/devices/platform/msi-ec/cooler_boost>
+[msi-ec/fan_mode]: <https://github.com/librazhd7/gentoo7/blob/main/sys/devices/platform/msi-ec/fan_mode>
+[msi-ec/fn_key]: <https://github.com/librazhd7/gentoo7/blob/main/sys/devices/platform/msi-ec/fn_key>
+[msi-ec/shift_mode]: <https://github.com/librazhd7/gentoo7/blob/main/sys/devices/platform/msi-ec/shift_mode>
+[msi-ec/super_battery]: <https://github.com/librazhd7/gentoo7/blob/main/sys/devices/platform/msi-ec/super_battery>
 [msi-ec/webcam]: <https://github.com/librazhd7/gentoo7/blob/main/sys/devices/platform/msi-ec/webcam>
-[msi-ec/webcam-block]: <https://github.com/librazhd7/gentoo7/blob/main/sys/devices/platform/msi-ec/webcam-block>
-[msi-ec/win-key]:<https://github.com/librazhd7/gentoo7/blob/main/sys/devices/platform/msi-ec/win-key>
+[msi-ec/webcam_block]: <https://github.com/librazhd7/gentoo7/blob/main/sys/devices/platform/msi-ec/webcam_block>
+[msi-ec/win_key]:<https://github.com/librazhd7/gentoo7/blob/main/sys/devices/platform/msi-ec/win_key>
 
 __made with__ ❤️
 
