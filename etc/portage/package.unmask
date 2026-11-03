@@ -1,3 +1,4 @@
+app-misc/claude-desktop-official
 app-misc/mcontrolcenter::tatsh-overlay
 games-util/game-device-udev-rules::steam-overlay
 games-util/steam-launcher::steam-overlay
