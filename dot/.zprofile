@@ -15,6 +15,8 @@
 #  exec startx
 #fi
 
+#dbus-run-session startplasma-wayland
+
 #
 export __GL_GSYNC_ALLOWED=1
 export __GL_VRR_ALLOWED=0
