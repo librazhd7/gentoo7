@@ -14,8 +14,8 @@
 # user packages - personal apps
 #================================================================================================
 app-emulation/libvirt         fuse macvtap numa pcap vepa virt-network qemu
-app-emulation/qemu            QEMU_USER_TARGETS: x86_64 QEMU_SOFTMMU_TARGETS: x86_64
-app-emulation/wine-staging    gecko truetype wow64
+app-emulation/qemu            QEMU_SOFTMMU_TARGETS: x86_64 QEMU_USER_TARGETS: x86_64
+app-emulation/wine-staging    gecko mono truetype wow64
 media-gfx/sane-backends       hp
 media-video/obs-studio        lua pulseaudio speex v4l
 net-print/hplip               hpcups scanner snmp
