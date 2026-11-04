@@ -21,7 +21,7 @@ DISABLE_UNTRACKED_FILES_DIRTY="true"
 
 # standard plugins can be found in $ZSH/plugins/
 # custom plugins may be added to $ZSH_CUSTOM/plugins/
-plugins=(emoji,git,kitty,safe-paste)
+plugins=(emoji git kitty)
 
 source $ZSH/oh-my-zsh.sh
 
