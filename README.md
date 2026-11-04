@@ -461,7 +461,7 @@ rustup-init-gentoo --symlink
 emerge --ask app-emulation/libvirt app-emulation/qemu app-emulation/wine-staging app-emulation/winetricks
 winecfg
 winetricks dxvk vkd3d mfc42
-modprobe ntsync
+echo "ntsync" | doas tee /etc/modules-load.d/ntsync.conf
 
 #
 emerge --ask sys-apps/flatpak
