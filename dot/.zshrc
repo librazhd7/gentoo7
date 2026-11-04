@@ -11,7 +11,7 @@ export ZSH="$HOME/.oh-my-zsh"
 
 # echo $RANDOM_THEME to know which specific theme loaded if set to 'random'
 # list of themes: https://github.com/ohmyzsh/ohmyzsh/wiki/themes
-ZSH_THEME="gentoo"
+ZSH_THEME="minimal"
 
 # change the auto-update behavior to reminder when it's time
 zstyle ':omz:update' mode reminder
