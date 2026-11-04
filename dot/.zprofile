@@ -15,6 +15,7 @@
 #  exec startx
 #fi
 
+#
 #dbus-run-session startplasma-wayland
 
 #
@@ -47,7 +48,7 @@ export SDL_VIDEODRIVER="wayland"
 #
 export QT_QPA_PLATFORM="wayland;xcb"
 
-#export XDG_CURRENT_DESKTOP=ICEWM
-#export XDG_SESSION_DESKTOP=icewm-session
-#export XDG_SESSION_TYPE=x11
-#export XKB_DEFAULT_LAYOUT=se
+#export XDG_CURRENT_DESKTOP="ICEWM"
+#export XDG_SESSION_DESKTOP="icewm-session"
+#export XDG_SESSION_TYPE="x11"
+#export XKB_DEFAULT_LAYOUT="se"
