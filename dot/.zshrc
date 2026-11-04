@@ -23,8 +23,6 @@ DISABLE_UNTRACKED_FILES_DIRTY="true"
 # custom plugins may be added to $ZSH_CUSTOM/plugins/
 plugins=(emoji git kitty)
 
-source $ZSH/oh-my-zsh.sh
-
 # enabling portage completions and gentoo prompt for zsh
 autoload -U compinit promptinit
 compinit
@@ -32,3 +30,5 @@ promptinit; prompt gentoo
 
 # enabling cache for the completions for zsh
 zstyle ':completion::complete:*' use-cache 1
+
+source $ZSH/oh-my-zsh.sh
