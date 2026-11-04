@@ -454,7 +454,9 @@ chsh -s /bin/zsh
 
 #
 emerge --ask media-video/pipewire sys-auth/rtkit x11-drivers/nvidia-drivers
-emerge --ask dev-util/rustup
+
+#
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 rustup-init-gentoo --symlink
 
 #
