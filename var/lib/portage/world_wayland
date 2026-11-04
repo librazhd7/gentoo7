@@ -29,7 +29,6 @@ dev-build/cmake
 dev-build/ninja
 dev-util/nvidia-cuda-toolkit
 dev-util/vulkan-tools
-dev-util/rustup
 dev-vcs/git
 dev-vcs/rcs
 games-action/minecraft-launcher
