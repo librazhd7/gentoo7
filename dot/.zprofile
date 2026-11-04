@@ -18,37 +18,34 @@
 #dbus-run-session startplasma-wayland
 
 #
-export __GL_GSYNC_ALLOWED=1
-export __GL_VRR_ALLOWED=0
-export __GL_THREADED_OPTIMIZATIONS=1
+#export __GL_THREADED_OPTIMIZATIONS="1"
 
 #
-export __GLX_VENDOR_LIBRARY_NAME=nvidia
-export __NV_PRIME_RENDER_OFFLOAD=1
-export __VK_LAYER_NV_optimus=NVIDIA_only
-
-
-#
-export _JAVA_AWT_WM_NONREPARENTING=1
+export __GLX_VENDOR_LIBRARY_NAME="nvidia"
+export __NV_PRIME_RENDER_OFFLOAD="1"
+export __VK_LAYER_NV_optimus="NVIDIA_only"
 
 #
-#export CLUTTER_BACKEND=wayland
-export GBM_BACKEND=nvidia-drm
-export GDK_BACKEND=wayland,x11
+export _JAVA_AWT_WM_NONREPARENTING="1"
 
 #
-export GLFW_IM_MODULE=ibus
+#export CLUTTER_BACKEND="wayland"
+export GBM_BACKEND="nvidia-drm"
+export GDK_BACKEND="wayland,x11"
 
 #
-export LIBVA_DRIVER_NAME=nvidia
-export VDPAU_DRIVER=nvidia
+export GLFW_IM_MODULE="ibus"
 
 #
-export SDL_AUDIODRIVER=pipewire
-export SDL_VIDEODRIVER=wayland
+export LIBVA_DRIVER_NAME="nvidia"
+export VDPAU_DRIVER="nvidia"
 
 #
-export QT_QPA_PLATFORM=wayland;xcb
+export SDL_AUDIODRIVER="pipewire"
+export SDL_VIDEODRIVER="wayland"
+
+#
+export QT_QPA_PLATFORM="wayland;xcb"
 
 #export XDG_CURRENT_DESKTOP=ICEWM
 #export XDG_SESSION_DESKTOP=icewm-session
