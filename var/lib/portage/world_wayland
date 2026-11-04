@@ -85,6 +85,7 @@ sys-apps/systemd
 sys-apps/xdg-desktop-portal
 sys-auth/rtkit
 sys-block/io-scheduler-udev-rules
+sys-block/partitionmanager
 sys-boot/limine
 sys-firmware/intel-microcode
 sys-firmware/sof-firmware
@@ -115,6 +116,5 @@ x11-terms/kitty
 #dev-util/android-tools
 #games-board/cutechess
 #games-board/stockfish
-#sys-block/partitionmanager
 #sys-boot/vboot-utils
 #sys-fs/cryptsetup
