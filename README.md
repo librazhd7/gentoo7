@@ -466,7 +466,7 @@ rustup toolchain link system /usr
 #
 emerge --ask app-emulation/libvirt app-emulation/qemu app-emulation/wine-staging app-emulation/winetricks
 winecfg
-winetricks directplay mfc42 dxvk dxvk-nvapi vkd3d quartz
+winetricks directplay mfc42 dxvk vkd3d quartz
 echo "ntsync" | doas tee /etc/modules-load.d/ntsync.conf
 
 #
