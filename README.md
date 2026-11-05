@@ -456,8 +456,12 @@ chsh -s /bin/zsh
 emerge --ask media-video/pipewire sys-auth/rtkit x11-drivers/nvidia-drivers
 
 #
-curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+emerge --ask dev-util/rustup
 rustup-init-gentoo --symlink
+
+#
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+rustup toolchain link system /usr
 
 #
 emerge --ask app-emulation/libvirt app-emulation/qemu app-emulation/wine-staging app-emulation/winetricks
@@ -468,10 +472,10 @@ echo "ntsync" | doas tee /etc/modules-load.d/ntsync.conf
 #
 emerge --ask sys-apps/flatpak
 flatpak remote-add --user --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
+flatpak --user install flathub app.fluxer.Fluxer
 
 wget https://github.com/storytold/craft-launcher/releases/download/v0.12.0/artcraft-launcher-0.12.0-linux-x86_64.flatpak
 flatpak --user install artcraft-launcher-0.12.0-linux-x86_64.flatpak
-flatpak --user install flathub app.fluxer.Fluxer
 
 #
 eselect repository enable guru
