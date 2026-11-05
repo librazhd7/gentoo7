@@ -49,6 +49,7 @@ export SDL_VIDEODRIVER="wayland"
 export QT_QPA_PLATFORM="wayland;xcb"
 
 #
+export PROTON_USE_NTSYNC="1"
 export WINE_NT_SYNC="1"
 export MANGOHUD="1"
 
