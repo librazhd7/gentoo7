@@ -50,6 +50,7 @@ export QT_QPA_PLATFORM="wayland;xcb"
 
 #
 export WINE_NT_SYNC="1"
+export MANGOHUD="1"
 
 #
 #export XDG_CURRENT_DESKTOP="ICEWM"
