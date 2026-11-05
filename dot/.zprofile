@@ -48,6 +48,10 @@ export SDL_VIDEODRIVER="wayland"
 #
 export QT_QPA_PLATFORM="wayland;xcb"
 
+#
+export WINENTSYNC="1"
+
+#
 #export XDG_CURRENT_DESKTOP="ICEWM"
 #export XDG_SESSION_DESKTOP="icewm-session"
 #export XDG_SESSION_TYPE="x11"
