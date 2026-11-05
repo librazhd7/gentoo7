@@ -479,6 +479,8 @@ flatpak --user install artcraft-launcher-0.12.0-linux-x86_64.flatpak
 
 #
 eselect repository enable guru
+emaint sync -r guru
+emerge --ask app-misc/github-desktop-bin
 
 #
 eselect repository enable steam-overlay
