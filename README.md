@@ -478,6 +478,11 @@ wget https://github.com/storytold/craft-launcher/releases/download/v0.12.0/artcr
 flatpak --user install artcraft-launcher-0.12.0-linux-x86_64.flatpak
 
 #
+emerge --ask app-eselect/eselect-repository
+eselect repository remove -f gentoo
+eselect repository add gentoo git https://github.com/gentoo-mirror/gentoo
+
+#
 eselect repository enable guru
 emaint sync -r guru
 emerge --ask app-misc/github-desktop-bin
