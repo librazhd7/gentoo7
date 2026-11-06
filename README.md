@@ -47,7 +47,7 @@
 * samsung ddr5 (16gb)
 * micron 2400 mtfdkba512qfm nvme (512gb)
 * intel ax201
-etc/polkit-1/rules.d/49-wheel.rules
+
 ### contents
 | system                                                                                                    | purpose |
 |-----------------------------------------------------------------------------------------------------------|---------|
@@ -445,42 +445,13 @@ eclean-pkg
 > be sure to check the boot entries after issuing: `eclean-kernel -n 1`.                                                 \
 > it may be empty, and you will only be able to rewrite the boot entry through a livecd.
 
-### rustup, zsh, nvidia, pipewire, virtualization[^20] (needs updating)
+### personal ebuild repositories
 ```
-#
-emerge --ask app-shells/zsh app-shells/zsh-completions app-shells/gentoo-zsh-completions
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-chsh -s /bin/zsh
-
-#
-emerge --ask media-video/pipewire sys-auth/rtkit x11-drivers/nvidia-drivers
-
-#
-emerge --ask dev-util/rustup
-rustup-init-gentoo --symlink
-
-#
-curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
-rustup toolchain link system /usr
-
-#
-emerge --ask app-emulation/libvirt app-emulation/qemu app-emulation/wine-staging app-emulation/winetricks
-winecfg
-winetricks directplay mfc42 dxvk vkd3d quartz
-echo "ntsync" | doas tee /etc/modules-load.d/ntsync.conf
-
-#
-emerge --ask sys-apps/flatpak
-flatpak remote-add --user --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
-flatpak --user install flathub app.fluxer.Fluxer
-
-wget https://github.com/storytold/craft-launcher/releases/download/v0.12.0/artcraft-launcher-0.12.0-linux-x86_64.flatpak
-flatpak --user install artcraft-launcher-0.12.0-linux-x86_64.flatpak
-
 #
 emerge --ask app-eselect/eselect-repository
 eselect repository remove -f gentoo
 eselect repository add gentoo git https://github.com/gentoo-mirror/gentoo
+emaint sync -r gentoo
 
 #
 eselect repository enable guru
@@ -493,11 +464,6 @@ emaint sync -r steam-overlay
 emerge --ask games-util/steam-launcher
 
 #
-git clone https://github.com/BeardOverflow/msi-ec.git
-cd msi-ec
-make dkms-install
-
-#
 eselect repository enable tatsh-overlay
 emaint sync -r tatsh-overlay
 emerge --ask app-misc/mcontrolcenter
@@ -506,11 +472,62 @@ emerge --ask app-misc/mcontrolcenter
 eselect repository enable hossie
 emaint sync -r hossie
 emerge --ask app-misc/claude-desktop-official
+```
+
+
+### zsh, nvidia, pipewire, virtualization[^20] (needs updating)
+```
+#
+emerge --ask app-shells/zsh app-shells/zsh-completions app-shells/gentoo-zsh-completions
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+chsh -s /bin/zsh
+
+#
+emerge --ask media-video/pipewire sys-auth/rtkit x11-drivers/nvidia-drivers
+
+#
+emerge --ask app-emulation/libvirt app-emulation/qemu app-emulation/wine-staging app-emulation/winetricks
+winecfg
+winetricks directplay mfc42 dxvk vkd3d quartz
+echo "ntsync" | doas tee /etc/modules-load.d/ntsync.conf
 
 #
 curl -fsSL https://claude.ai/install.sh | bash
 curl -fsSL https://ollama.com/install.sh | sh
 ollama run qwen3.5
+```
+
+### flatpak
+```
+#
+emerge --ask sys-apps/flatpak
+flatpak remote-add --user --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
+
+#
+flatpak --user install flathub app.fluxer.Fluxer
+
+#
+wget https://github.com/storytold/craft-launcher/releases/download/v0.12.0/artcraft-launcher-0.12.0-linux-x86_64.flatpak
+flatpak --user install artcraft-launcher-0.12.0-linux-x86_64.flatpak
+```
+
+### rust/rustup
+```
+#
+emerge --ask dev-util/rustup
+rustup-init-gentoo --symlink
+
+#
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+rustup toolchain link system /usr
+```
+
+### msi-ec
+```
+#
+git clone https://github.com/BeardOverflow/msi-ec.git
+cd msi-ec
+make dkms-install
 ```
 
 > [!CAUTION]  
