@@ -505,7 +505,7 @@ emerge --ask app-misc/claude-desktop-official
 #
 curl -fsSL https://claude.ai/install.sh | bash
 curl -fsSL https://ollama.com/install.sh | sh
-ollama run qwen3.6:27b
+ollama run qwen3.5
 ```
 
 > [!CAUTION]  
