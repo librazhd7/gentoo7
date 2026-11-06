@@ -259,7 +259,6 @@ emerge --ask --depclean
 > to select locale for the system: `eselect locale list` / `eselect locale set <index>`             \
 > to generate all locales specified in the /etc/locale.gen file: `locale-gen`
 
-
 ### installing firmware[^11] [^12] [^13], bootloader[^14] and kernel[^15]
 ```
 mkdir -p /etc/cmdline.d
@@ -445,6 +444,8 @@ eclean-pkg
 > be sure to check the boot entries after issuing: `eclean-kernel -n 1`.                                                 \
 > it may be empty, and you will only be able to rewrite the boot entry through a livecd.
 
+---
+
 ### personal ebuild repositories
 ```
 #
@@ -473,7 +474,6 @@ eselect repository enable hossie
 emaint sync -r hossie
 emerge --ask app-misc/claude-desktop-official
 ```
-
 
 ### zsh, nvidia, pipewire, virtualization[^20] (needs updating)
 ```
@@ -529,6 +529,7 @@ git clone https://github.com/BeardOverflow/msi-ec.git
 cd msi-ec
 make dkms-install
 ```
+---
 
 > [!CAUTION]  
 > file configurations and design choices are strictly made with hardware and preference(s) of mine in mind. \
