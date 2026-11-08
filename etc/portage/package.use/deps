@@ -1,8 +1,11 @@
 app-arch/brotli          abi_x86_32
+kde-plasma/kwin          lock
 media-gfx/sane-backends  hp
 media-libs/freetype      brotli
+media-libs/libsdl2       kms
 media-libs/tiff          zstd lzma
 media-video/ffmpeg       lame opus theora vpx
+net-dns/avahi            python
 net-libs/gnutls          tools pkcs11
 net-libs/ngtcp2          gnutls
 sys-libs/zlib            minizip
