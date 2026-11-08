@@ -22,7 +22,7 @@ media-video/obs-studio        lua pulseaudio speex v4l
 net-print/hplip               hpcups scanner snmp
 
 #================================================================================================
-# system packages
+# system packages - personal setup
 #================================================================================================
 app-admin/doas                persist
 media-libs/vulkan-loader      layers
