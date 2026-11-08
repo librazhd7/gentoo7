@@ -34,6 +34,7 @@ dev-vcs/git
 dev-vcs/rcs
 games-action/minecraft-launcher
 games-arcade/supertux
+games-emulation/snes9x
 games-util/game-device-udev-rules
 games-util/steam-launcher
 gui-wm/gamescope
@@ -47,6 +48,7 @@ kde-apps/kolourpaint
 kde-apps/ksystemlog
 kde-apps/kwalletmanager
 kde-plasma/discover
+kde-plasma/flatpak-kcm
 kde-plasma/plasma-meta
 kde-plasma/sddm-kcm
 kde-plasma/xdg-desktop-portal-kde
