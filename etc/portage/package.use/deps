@@ -1,4 +1,8 @@
+app-arch/brotli          abi_x86_32
 media-gfx/sane-backends  hp
+media-libs/freetype      brotli
+media-libs/tiff          zstd lzma
 media-video/ffmpeg       lame opus theora vpx
 net-libs/gnutls          tools pkcs11
+net-libs/ngtcp2          gnutls
 sys-libs/zlib            minizip
