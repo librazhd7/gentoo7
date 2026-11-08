@@ -25,7 +25,6 @@ net-print/hplip               hpcups scanner snmp
 # system packages - personal setup
 #================================================================================================
 app-admin/doas                persist
-media-libs/vulkan-loader      layers
 media-plugins/alsa-plugins    ffmpeg
 media-video/pipewire          pipewire-alsa sound-server
 sys-apps/systemd              boot
