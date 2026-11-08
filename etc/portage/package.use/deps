@@ -1,0 +1,16 @@
+dev-libs/libdbusmenu     gtk3
+dev-python/pyside        uitools
+media-libs/freetype      brotli
+media-libs/opensubdiv    tbb
+media-libs/tiff          zstd lzma
+media-video/ffmpeg       opus vpx lame theora
+media-libs/libheif       gui tools
+media-libs/libsdl2       kms
+net-dns/avahi            python
+net-dns/dnsmasq          script
+net-libs/gnutls          tools pkcs11
+net-libs/ngtcp2          gnutls
+sci-libs/opencascade     json
+sci-libs/fftw            threads
+sys-libs/zlib            minizip
+sci-physics/bullet       double-precision
