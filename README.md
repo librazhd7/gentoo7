@@ -502,6 +502,7 @@ ollama run qwen3.5
 #
 emerge --ask sys-apps/flatpak
 flatpak remote-add --user --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
+flatpak --user install flathub com.github.tchx84.Flatseal
 
 #
 flatpak --user install flathub app.fluxer.Fluxer
