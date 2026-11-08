@@ -16,7 +16,6 @@
 app-emulation/libvirt         fuse macvtap numa pcap vepa virt-network qemu
 app-emulation/qemu            QEMU_SOFTMMU_TARGETS: x86_64 QEMU_USER_TARGETS: x86_64
 app-emulation/wine-staging    gecko mono truetype wow64
-kde-plasma/plasma-meta        oxygen-theme
 media-video/obs-studio        lua pulseaudio speex v4l
 net-print/hplip               hpcups scanner snmp
 
@@ -24,6 +23,7 @@ net-print/hplip               hpcups scanner snmp
 # system packages - personal setup
 #================================================================================================
 app-admin/doas                persist
+kde-plasma/plasma-meta        oxygen-theme
 media-plugins/alsa-plugins    ffmpeg
 media-video/pipewire          pipewire-alsa sound-server
 sys-apps/systemd              boot
