@@ -1,3 +1,4 @@
-media-video/ffmpeg  opus
-net-libs/gnutls     tools pkcs11
-sys-libs/zlib       minizip
+media-gfx/sane-backends  hp
+media-video/ffmpeg       lame opus theora vpx
+net-libs/gnutls          tools pkcs11
+sys-libs/zlib            minizip
