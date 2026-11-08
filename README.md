@@ -497,12 +497,11 @@ curl -fsSL https://ollama.com/install.sh | sh
 ollama run qwen3.5
 ```
 
-### flatpak
+### flatpak (kde integration)
 ```
 #
-emerge --ask sys-apps/flatpak
+emerge --ask sys-apps/flatpak kde-plasma/flatpak-kcm
 flatpak remote-add --user --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
-flatpak --user install flathub com.github.tchx84.Flatseal
 
 #
 flatpak --user install flathub app.fluxer.Fluxer
