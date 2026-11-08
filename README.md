@@ -251,12 +251,14 @@ emerge --ask --depclean
 ```
 
 > [!TIP]
-> for detecting cpu: `app-misc/resolve-march-native`                                                \
-> for detecting cpu features: `app-portage/cpuid2cpuflags`                                          \
-> to select hostname for the system: `echo tux > /etc/hostname`                                     \
-> to select timezone for the system: `ln -sf ../usr/share/zoneinfo/Europe/Stockholm /etc/localtime` \
-> to select profile for the system: `eselect profile list` / `eselect profile set <index>`          \
-> to select locale for the system: `eselect locale list` / `eselect locale set <index>`             \
+> for detecting cpu: `resolve-march-native --drop-cache-sizes`                                                         \
+> for detecting cpu features: `cpuid2cpuflags`                                                                         \
+> to select hostname for the system: `echo tux > /etc/hostname`                                                        \
+> to select timezone for the system: `ln -sf ../usr/share/zoneinfo/Europe/Stockholm /etc/localtime`                    \
+> to select profile for the system (__eselect__): `eselect profile list` / `eselect profile set <value>`               \
+> to select locale for the system (__eselect__): `eselect locale list` / `eselect locale set <value>`                  \
+> to select locale for the system (__localectl__): `localectl list-locales` / `localectl set-locale <value>`           \
+> to select keyboard layout for the console (__localectl__): `localectl list-keymaps` / `localectl set-keymap <value>` \
 > to generate all locales specified in the /etc/locale.gen file: `locale-gen`
 
 ### installing firmware[^11] [^12] [^13], bootloader[^14] and kernel[^15]
