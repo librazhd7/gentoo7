@@ -15,7 +15,7 @@
 #================================================================================================
 app-emulation/libvirt  fuse lvm numa pcap
 app-emulation/qemu     QEMU_SOFTMMU_TARGETS: x86_64 QEMU_USER_TARGETS: x86_64
-media-video/obs-studio lua nvenc screencast speex v4l
+media-video/obs-studio lua screencast speex v4l
 net-print/hplip        scanner
 #net-misc/moonlight     cuda-clang
 net-misc/sunshine      cuda kde svt-av1 trayicon x264 x265
@@ -29,7 +29,6 @@ kde-plasma/plasma-meta                 -crash-handler discover flatpak gtk -kwal
 kde-plasma/plasma-workspace	           appstream flatpak screencast
 kde-plasma/kwin	                       activities gamepad screencast
 media-libs/noise-suppression-for-voice lv2
-media-video/ffmpeg                     nvenc
 media-video/pipewire                   extra flatpak lv2 pipewire-alsa sound-server
 sys-apps/fwupd                         tpm uefi
 sys-apps/systemd                       boot
