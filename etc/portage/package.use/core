@@ -7,7 +7,7 @@
 # setting appropriate video cards for pulling correct drivers
 */* VIDEO_CARDS: -* intel nvidia
 
-# for mouse, keyboard, and synaptics touchpad support
+# for mouse, keyboard, and elan touchpad support
 */* INPUT_DEVICES: libinput
 
 #================================================================================================
