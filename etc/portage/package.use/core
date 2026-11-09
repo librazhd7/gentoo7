@@ -13,22 +13,29 @@
 #================================================================================================
 # user packages - personal apps
 #================================================================================================
-app-emulation/libvirt         fuse lvm numa pcap vepa
-app-emulation/qemu            QEMU_SOFTMMU_TARGETS: x86_64 QEMU_USER_TARGETS: x86_64
-media-video/obs-studio        lua speex v4l
-net-print/hplip               scanner
+app-emulation/libvirt  fuse lvm numa pcap vepa
+app-emulation/qemu     QEMU_SOFTMMU_TARGETS: x86_64 QEMU_USER_TARGETS: x86_64
+media-video/obs-studio lua speex v4l
+net-print/hplip        scanner
+net-misc/moonlight     cuda-clang
+net-misc/sunshine      cuda kde pipewire svt-av1 trayicon x264 x265
 
 #================================================================================================
 # system packages - personal setup
 #================================================================================================
-app-admin/doas                persist
-kde-plasma/plasma-meta        -crash-handler discover flatpak gtk -kwallet oxygen-theme
-media-video/pipewire          pipewire-alsa sound-server
-sys-apps/systemd              boot
-sys-boot/limine               -bios -bios-cd -bios-pxe -uefi-aarch64 -uefi-cd -uefi-ia32 -uefi-loongarch64 -uefi-riscv64
-sys-devel/gcc                 lto pgo
-sys-fs/lvm2                   lvm thin
-sys-kernel/gentoo-sources     symlink
-sys-kernel/installkernel      dracut uki
-sys-libs/glibc                hash-sysv-compat stack-realign
-x11-drivers/nvidia-drivers    kernel-open
+app-admin/doas                         persist
+kde-plasma/discover                    flatpak
+kde-plasma/plasma-meta                 -crash-handler discover flatpak gtk -kwallet oxygen-theme
+kde-plasma/plasma-workspace	           appstream flatpak
+media-libs/noise-suppression-for-voice lv2
+media-video/pipewire                   flatpak lv2 pipewire-alsa sound-server
+sys-apps/fwupd                         tpm uefi
+sys-apps/systemd                       boot
+sys-apps/xdg-desktop-portal	           flatpak
+sys-boot/limine                        -bios -bios-cd -bios-pxe -uefi-aarch64 -uefi-cd -uefi-ia32 -uefi-loongarch64 -uefi-riscv64
+sys-devel/gcc                          lto pgo
+sys-fs/lvm2                            lvm thin
+sys-kernel/gentoo-sources              symlink
+sys-kernel/installkernel               dracut uki
+sys-libs/glibc                         hash-sysv-compat stack-realign
+x11-drivers/nvidia-drivers             kernel-open
