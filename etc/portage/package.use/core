@@ -15,7 +15,6 @@
 #================================================================================================
 app-emulation/libvirt         fuse lvm numa pcap vepa
 app-emulation/qemu            QEMU_SOFTMMU_TARGETS: x86_64 QEMU_USER_TARGETS: x86_64
-app-emulation/wine-staging    gecko mono truetype wow64
 media-video/obs-studio        lua pulseaudio speex v4l
 net-print/hplip               scanner
 
@@ -24,15 +23,12 @@ net-print/hplip               scanner
 #================================================================================================
 app-admin/doas                persist
 kde-plasma/plasma-meta        -crash-handler discover flatpak gtk -kwallet oxygen-theme
-media-plugins/alsa-plugins    ffmpeg
 media-video/pipewire          pipewire-alsa sound-server
 sys-apps/systemd              boot
 sys-boot/limine               -bios -bios-cd -bios-pxe -uefi-aarch64 -uefi-cd -uefi-ia32 -uefi-loongarch64 -uefi-riscv64
 sys-devel/gcc                 lto pgo
-#sys-firmware/intel-microcode  initramfs
 sys-fs/lvm2                   lvm thin
 sys-kernel/gentoo-sources     symlink
 sys-kernel/installkernel      dracut uki
-#sys-kernel/linux-firmware     initramfs
 sys-libs/glibc                hash-sysv-compat stack-realign
 x11-drivers/nvidia-drivers    kernel-open
