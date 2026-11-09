@@ -47,6 +47,7 @@ kde-apps/kfind
 kde-apps/kolourpaint
 kde-apps/ksystemlog
 kde-apps/kwalletmanager
+kde-frameworks/kdoctools
 kde-plasma/discover
 kde-plasma/flatpak-kcm
 kde-plasma/plasma-meta
