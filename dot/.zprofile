@@ -54,6 +54,9 @@ export WINE_NT_SYNC="1"
 export MANGOHUD="1"
 
 #
+export WEBKIT_DISABLE_DMABUF_RENDERER="1"
+
+#
 #export XDG_CURRENT_DESKTOP="ICEWM"
 #export XDG_SESSION_DESKTOP="icewm-session"
 #export XDG_SESSION_TYPE="x11"
