@@ -13,7 +13,7 @@
 #================================================================================================
 # user packages - personal apps
 #================================================================================================
-app-emulation/libvirt  fuse lvm numa pcap vepa
+app-emulation/libvirt  fuse lvm numa pcap
 app-emulation/qemu     QEMU_SOFTMMU_TARGETS: x86_64 QEMU_USER_TARGETS: x86_64
 media-video/obs-studio lua speex v4l
 net-print/hplip        scanner
