@@ -1,4 +1,4 @@
-# ![](https://assets.gentoo.org/tyrian/v1/site-logo.svg)
+# ![](https://img.shields.io/badge/Gentoo-54487A?logo=gentoo&logoColor=fff)
 
 ### index
 - [why](#why)
