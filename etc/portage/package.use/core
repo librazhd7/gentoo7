@@ -33,7 +33,9 @@ sys-apps/systemd                       boot
 sys-boot/limine                        -bios -bios-cd -bios-pxe -uefi-aarch64 -uefi-cd -uefi-ia32 -uefi-loongarch64 -uefi-riscv64
 sys-devel/gcc                          lto pgo
 sys-fs/lvm2                            lvm thin
-sys-kernel/gentoo-sources              symlink
+sys-kernel/gentoo-sources              experimental modules-compress symlink
+sys-kernel/gentoo-kernel               hardened modules-compress modules-sign secureboot
+sys-kernel/gentoo-kernel-bin           modules-compress
 sys-kernel/installkernel               dracut uki
 sys-libs/glibc                         hash-sysv-compat stack-realign
 x11-drivers/nvidia-drivers             kernel-open
