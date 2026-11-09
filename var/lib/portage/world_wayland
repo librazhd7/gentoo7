@@ -15,7 +15,7 @@ app-eselect/eselect-repository
 app-i18n/ibus
 app-misc/claude-desktop-official
 app-misc/fastfetch
-app-misc/mcontrolcenter
+app-misc/github-desktop-bin
 app-misc/resolve-march-native
 app-misc/solaar
 app-portage/cpuid2cpuflags
