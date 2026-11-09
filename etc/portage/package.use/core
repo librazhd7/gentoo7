@@ -15,7 +15,7 @@
 #================================================================================================
 app-emulation/libvirt  fuse lvm numa pcap
 app-emulation/qemu     QEMU_SOFTMMU_TARGETS: x86_64 QEMU_USER_TARGETS: x86_64
-media-video/obs-studio lua speex v4l
+media-video/obs-studio lua screencast speex v4l
 net-print/hplip        scanner
 #net-misc/moonlight     cuda-clang
 net-misc/sunshine      cuda kde svt-av1 trayicon x264 x265
@@ -24,12 +24,15 @@ net-misc/sunshine      cuda kde svt-av1 trayicon x264 x265
 # system packages - personal setup
 #================================================================================================
 app-admin/doas                         persist
-kde-plasma/plasma-meta                 -crash-handler discover gtk -kwallet oxygen-theme
-kde-plasma/plasma-workspace	           appstream
+kde-plasma/discover                    flatpak
+kde-plasma/plasma-meta                 -crash-handler discover flatpak gtk -kwallet oxygen-theme
+kde-plasma/plasma-workspace	           appstream flatpak screencast
+kde-plasma/kwin	                       activities gamepad screencast
 media-libs/noise-suppression-for-voice lv2
-media-video/pipewire                   extra ffmpeg lv2 pipewire-alsa sound-server
+media-video/pipewire                   extra flatpak lv2 pipewire-alsa sound-server
 sys-apps/fwupd                         tpm uefi
 sys-apps/systemd                       boot
+sys-apps/xdg-desktop-portal            flatpak
 sys-boot/limine                        -bios -bios-cd -bios-pxe -uefi-aarch64 -uefi-cd -uefi-ia32 -uefi-loongarch64 -uefi-riscv64
 sys-devel/gcc                          lto pgo
 sys-fs/lvm2                            lvm thin
