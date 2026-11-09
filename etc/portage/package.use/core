@@ -23,7 +23,7 @@ net-print/hplip               hpcups scanner snmp
 # system packages - personal setup
 #================================================================================================
 app-admin/doas                persist
-kde-plasma/plasma-meta        oxygen-theme
+kde-plasma/plasma-meta        -crash-handler flatpak gtk -kwallet oxygen-theme
 media-plugins/alsa-plugins    ffmpeg
 media-video/pipewire          pipewire-alsa sound-server
 sys-apps/systemd              boot
@@ -36,4 +36,4 @@ sys-kernel/installkernel      dracut uki
 sys-kernel/linux-firmware     initramfs
 sys-libs/glibc                hash-sysv-compat stack-realign
 x11-base/xorg-server          glamor
-x11-drivers/nvidia-drivers    kernel-open tools
+x11-drivers/nvidia-drivers    kernel-open
