@@ -371,7 +371,8 @@ systemctl preset-all
 > to enable unit to start automatically at boot: `systemctl enable .service/.socket` \
 > to start unit immediately: `systemctl start .service/.socket/.timer`               \
 > to select the hostname for the system: `hostnamectl hostname tux`                  \
-> to select the timezone for the system: `timedatectl set-timezone Europe/Stockholm`
+> to select the timezone for the system: `timedatectl set-timezone Europe/Stockholm` \
+> to clean up core dumps manually: `systemd-tmpfiles --clean`
 
 ### journalctl [^17]
 | command                      | functionality                                                                                          |
