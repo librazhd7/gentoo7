@@ -510,7 +510,8 @@ flatpak remote-add --user --if-not-exists flathub https://dl.flathub.org/repo/fl
 > [!TIP]
 > to install flatpaks: `flatpak --user <repo> <package>`                                    \
 > to uninstall flatpaks (__with data__): `flatpak --user uninstall --delete-data <package>` \
-> to uninstall unused dependencies: `flatpak --user uninstall --unused`
+> to uninstall unused dependencies: `flatpak --user uninstall --unused`                     \
+> to check for flatpak updates: `flatpak --user update`
 
 ### rust/rustup
 ```
