@@ -505,14 +505,12 @@ ollama run qwen3.5
 #
 emerge --ask sys-apps/flatpak kde-plasma/flatpak-kcm
 flatpak remote-add --user --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
-
-#
-flatpak --user install flathub app.fluxer.Fluxer
-
-#
-wget https://github.com/storytold/craft-launcher/releases/download/v0.12.0/artcraft-launcher-0.12.0-linux-x86_64.flatpak
-flatpak --user install artcraft-launcher-0.12.0-linux-x86_64.flatpak
 ```
+
+> [!TIP]
+> to install flatpaks: `flatpak --user <repo> <package>`                                    \
+> to uninstall flatpaks (__with data__): `flatpak --user uninstall --delete-data <package>` \
+> to uninstall unused dependencies: `flatpak --user uninstall --unused`
 
 ### rust/rustup
 ```
