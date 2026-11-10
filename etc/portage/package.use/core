@@ -14,6 +14,7 @@
 # user packages - personal apps
 #================================================================================================
 app-emulation/libvirt  fuse lvm numa pcap
+app-emulation/punes    -ffmpeg
 app-emulation/qemu     QEMU_SOFTMMU_TARGETS: x86_64 QEMU_USER_TARGETS: x86_64
 media-video/obs-studio lua screencast speex v4l
 net-print/hplip        scanner
@@ -27,7 +28,7 @@ app-admin/doas                         persist
 kde-plasma/discover                    flatpak
 kde-plasma/plasma-meta                 -crash-handler discover flatpak gtk -kwallet oxygen-theme
 kde-plasma/plasma-workspace	           appstream flatpak screencast
-kde-plasma/kwin	                       activities gamepad screencast
+kde-plasma/kwin	                       activities gamepad lock screencast
 media-libs/noise-suppression-for-voice lv2
 media-video/pipewire                   extra flatpak lv2 pipewire-alsa sound-server
 sys-apps/fwupd                         tpm uefi
