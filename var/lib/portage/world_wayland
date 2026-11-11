@@ -3,6 +3,8 @@ app-admin/eclean-kernel
 app-arch/unrar
 app-arch/zstd
 app-crypt/sbsigntools
+app-crypt/tpm2-tools
+app-crypt/tpm2-tss
 app-editors/nano
 app-editors/vim
 app-editors/zed
@@ -46,7 +48,6 @@ kde-apps/kcolorchooser
 kde-apps/kfind
 kde-apps/kolourpaint
 kde-apps/ksystemlog
-kde-apps/kwalletmanager
 kde-frameworks/kdoctools
 kde-plasma/discover
 kde-plasma/flatpak-kcm
@@ -90,6 +91,7 @@ sys-block/partitionmanager
 sys-boot/limine
 sys-firmware/intel-microcode
 sys-firmware/sof-firmware
+sys-fs/cryptsetup
 sys-fs/dosfstools
 sys-fs/fuse:0
 sys-fs/lvm2
@@ -118,4 +120,3 @@ x11-terms/kitty
 #games-board/cutechess
 #games-board/stockfish
 #sys-boot/vboot-utils
-#sys-fs/cryptsetup
