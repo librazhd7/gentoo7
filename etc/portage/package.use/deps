@@ -1,5 +1,4 @@
 app-arch/brotli          abi_x86_32
-kde-plasma/kwin          lock
 media-gfx/sane-backends  hp
 media-libs/freetype      brotli
 media-libs/libsdl2       kms
