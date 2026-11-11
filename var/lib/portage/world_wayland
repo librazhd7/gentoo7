@@ -2,6 +2,7 @@ app-admin/doas
 app-admin/eclean-kernel
 app-arch/unrar
 app-arch/zstd
+app-crypt/efitools
 app-crypt/sbsigntools
 app-crypt/tpm2-tools
 app-crypt/tpm2-tss
@@ -28,6 +29,7 @@ app-shells/zsh-completions
 dev-java/openjdk-bin
 dev-lang/rust-bin
 dev-libs/intel-compute-runtime
+dev-libs/openssl
 dev-build/cmake
 dev-build/ninja
 dev-util/nvidia-cuda-toolkit
@@ -115,8 +117,3 @@ x11-drivers/nvidia-drivers
 x11-misc/prime-run
 x11-misc/wmctrl
 x11-terms/kitty
-
-#dev-util/android-tools
-#games-board/cutechess
-#games-board/stockfish
-#sys-boot/vboot-utils
