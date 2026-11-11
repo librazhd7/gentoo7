@@ -29,11 +29,11 @@
 - [x] printing
 - [x] qemu
 - [x] ~~samba~~
-- [ ] secure boot
+- [x] ~~secure boot~~
 - [x] ssh
 - [x] systemd
 - [x] ~~tmpfs~~
-- [ ] tpm2
+- [x] ~~tpm2~~
 - [x] uki
 - [x] wayland
 - [x] xorg
@@ -255,13 +255,13 @@ emerge --ask --depclean
 > for detecting cpu features: `cpuid2cpuflags`                                                                         \
 > to select hostname for the system: `echo tux > /etc/hostname`                                                        \
 > to select timezone for the system: `ln -sf ../usr/share/zoneinfo/Europe/Stockholm /etc/localtime`                    \
-> to select profile for the system (__eselect__): `eselect profile list` / `eselect profile set <value>`               \
-> to select locale for the system (__eselect__): `eselect locale list` / `eselect locale set <value>`                  \
-> to select locale for the system (__localectl__): `localectl list-locales` / `localectl set-locale <value>`           \
-> to select keyboard layout for the console (__localectl__): `localectl list-keymaps` / `localectl set-keymap <value>` \
-> to generate all locales specified in the /etc/locale.gen file: `locale-gen`
+> to select profile for the system using __eselect__: `eselect profile list` / `eselect profile set <value>`               \
+> to select locale for the system using __eselect__: `eselect locale list` / `eselect locale set <value>`                  \
+> to select locale for the system using __localectl__: `localectl list-locales` / `localectl set-locale <value>`           \
+> to select keyboard layout for the console using __localectl__: `localectl list-keymaps` / `localectl set-keymap <value>` \
+> to generate all locales specified in the __/etc/locale.gen file__: `locale-gen`
 
-### installing firmware[^11] [^12] [^13], bootloader[^14] and kernel[^15]
+### installing firmware[^11] [^12] [^13], bootloader[^14] and kernel[^15] (needs refinement)
 ```
 mkdir -p /etc/cmdline.d
 ln -s /etc/kernel/cmdline /etc/cmdline.d/00-installkernel.conf
@@ -399,12 +399,15 @@ systemctl preset-all
 
 ### creating user
 ```
+#
 emerge --ask app-admin/doas
-useradd -mG android,audio,kvm,libvirt,pipewire,plugdev,users,video,wheel <user>
-passwd <user>
 touch /etc/doas.conf
 echo "permit persist :wheel" >> /etc/doas.conf
 chmod -c 0400 /etc/doas.conf
+
+#
+useradd -mG android,audio,kvm,libvirt,pipewire,plugdev,users,video,wheel <user>
+passwd <user>
 ```
 
 > [!CAUTION]
@@ -512,17 +515,6 @@ flatpak remote-add --user --if-not-exists flathub https://dl.flathub.org/repo/fl
 > to uninstall flatpaks (__with data__): `flatpak --user uninstall --delete-data <package>` \
 > to uninstall unused dependencies: `flatpak --user uninstall --unused`                     \
 > to check for flatpak updates: `flatpak --user update`
-
-### rust/rustup
-```
-#
-emerge --ask dev-util/rustup
-rustup-init-gentoo --symlink
-
-#
-curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
-rustup toolchain link system /usr
-```
 
 ### msi-ec
 ```
