@@ -26,12 +26,12 @@ app-portage/gentoolkit
 app-shells/gentoo-zsh-completions
 app-shells/zsh
 app-shells/zsh-completions
+dev-build/cmake
+dev-build/ninja
 dev-java/openjdk-bin
 dev-lang/rust-bin
 dev-libs/intel-compute-runtime
 dev-libs/openssl
-dev-build/cmake
-dev-build/ninja
 dev-util/nvidia-cuda-toolkit
 dev-util/vulkan-tools
 dev-vcs/git
