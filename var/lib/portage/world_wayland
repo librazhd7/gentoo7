@@ -108,7 +108,6 @@ sys-kernel/linux-headers
 sys-kernel/modprobed-db
 sys-power/acpid
 sys-power/thermald
-sys-power/tlp
 sys-process/htop
 www-client/google-chrome
 x11-apps/mesa-progs
