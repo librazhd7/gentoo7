@@ -324,7 +324,7 @@ cp -v /usr/share/limine/BOOTX64.EFI /boot/EFI/BOOT/
 | `cups.service (#)`                     | `virtstoraged.socket (#)`   | |
 | `dkms.service (#)`                     | |
 | ~~`dnsmasq.service (#)`~~              | |
-| `gammastep.service (?)`                | |
+| `gammastep.service ($)`                | |
 | `getty@tty1.service (#)`               | |
 | `libvirtd.service (#)`                 | |
 | `lvm2-monitor.service (#)`             | |
@@ -341,6 +341,7 @@ cp -v /usr/share/limine/BOOTX64.EFI /boot/EFI/BOOT/
 | `systemd-timesyncd.service (#)`        | |
 | `thermald.service (#)`                 | |
 | `tlp.service (#)`                      | |
+| `tuned.service (#)` (kde)              | |
 | `virtnetworkd.service (#)`             | |
 | `virtqemud.service (#)`                | |
 | `virtlogd.service (#)`                 | |
@@ -452,7 +453,7 @@ eclean-pkg
 
 ---
 
-### personal ebuild repositories
+### personal ebuild repositories (needs refinement)
 ```
 #
 emerge --ask app-eselect/eselect-repository
