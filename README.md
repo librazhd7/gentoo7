@@ -341,6 +341,7 @@ cp -v /usr/share/limine/BOOTX64.EFI /boot/EFI/BOOT/
 | ~~`systemd-modules-load.service (#)`~~ | |
 | ~~`systemd-networkd.service (#)`~~     | |
 | `systemd-timesyncd.service (#)`        | |
+| `tailscaled.service (#)`               | |
 | `thermald.service (#)`                 | |
 | `tlp.service (#)`                      | |
 | `tuned.service (#)` (kde)              | |
