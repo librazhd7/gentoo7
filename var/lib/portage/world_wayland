@@ -53,7 +53,9 @@ kde-apps/ksystemlog
 kde-frameworks/kdoctools
 kde-plasma/discover
 kde-plasma/flatpak-kcm
+kde-plasma/plasma-keyboard
 kde-plasma/plasma-meta
+kde-plasma/powerdevil
 kde-plasma/sddm-kcm
 kde-plasma/xdg-desktop-portal-kde
 media-fonts/corefonts
