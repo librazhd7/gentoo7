@@ -21,12 +21,14 @@
 - [x] hybrid graphics (optimus)
 - [x] kernel
 - [x] limine
-- [x] lvm thin provisioning (2:1)
+- [x] lvm thin overprovisioning (2:1 ratio)
+- [x] msi-ec
 - [x] networking
 - [x] pipewire
 - [x] portage optimizations
 - [x] power management
 - [x] printing
+- [x] openrgb (i2c)
 - [x] qemu
 - [x] ~~samba~~
 - [x] ~~secure boot~~
@@ -579,6 +581,7 @@ make dkms-install
 - [__git__][docs/git]
 - [__guru__][docs/guru]
 - [__hybrid graphics__][docs/hybrid_graphics]
+- [__i2c__][docs/i2c]
 - [__libinput__][docs/libinput]
 - [__libvirt__][docs/libvirt]
 - [__lto__][docs/lto]
@@ -624,6 +627,7 @@ make dkms-install
 [docs/git]:                  <https://wiki.gentoo.org/wiki/Git>
 [docs/guru]:                 <https://wiki.gentoo.org/wiki/Project:GURU>
 [docs/hybrid_graphics]:      <https://wiki.gentoo.org/wiki/Hybrid_graphics>
+[docs/i2c]:                  <https://wiki.gentoo.org/wiki/I2C>
 [docs/intel]:                <https://wiki.gentoo.org/wiki/Intel>
 [docs/kernel]:               <https://wiki.gentoo.org/wiki/Kernel>
 [docs/libinput]:             <https://wiki.gentoo.org/wiki/Libinput>
