@@ -502,6 +502,10 @@ curl -fsSL https://ollama.com/install.sh | sh
 curl -fsSL https://tailscale.com/install.sh | sh
 ```
 
+> [!TIP]
+> connect to __tailscale__ (login if needed): `tailscale up`                             \
+> configure the __tailscale cli__ to not require doas/sudo: `tailscale set --operator=$USER`
+
 ### flatpak (kde integration)
 ```
 #
