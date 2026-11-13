@@ -1,6 +1,5 @@
 app-misc/claude-desktop-official::hossie
 app-misc/github-desktop-bin::guru
-app-misc/mcontrolcenter::tatsh-overlay
 games-util/game-device-udev-rules::steam-overlay
 games-util/steam-launcher::steam-overlay
 sys-libs/libudev-compat::steam-overlay
