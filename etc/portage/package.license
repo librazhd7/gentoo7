@@ -3,7 +3,6 @@ app-misc/github-desktop-bin all-rights-reserved android
 dev-util/intel-ocl-sdk INTEL-SDP
 dev-util/nvidia-cuda-toolkit NVIDIA-CUDA
 games-action/minecraft-launcher Mojang
-games-emulation/snes9x Snes9x
 games-util/steam-launcher ValveSteamLicense
 media-fonts/corefonts MSttfEULA
 www-client/google-chrome google-chrome
