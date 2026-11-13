@@ -474,11 +474,6 @@ emaint sync -r steam-overlay
 emerge --ask games-util/steam-launcher
 
 #
-eselect repository enable tatsh-overlay
-emaint sync -r tatsh-overlay
-emerge --ask app-misc/mcontrolcenter
-
-#
 eselect repository enable hossie
 emaint sync -r hossie
 emerge --ask app-misc/claude-desktop-official
@@ -503,7 +498,7 @@ echo "ntsync" | doas tee /etc/modules-load.d/ntsync.conf
 #
 curl -fsSL https://claude.ai/install.sh | bash
 curl -fsSL https://ollama.com/install.sh | sh
-ollama run qwen3.5
+curl -fsSL https://tailscale.com/install.sh | sh
 ```
 
 ### flatpak (kde integration)
