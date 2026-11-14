@@ -1,5 +1,6 @@
 # guru
 app-misc/github-desktop-bin::guru
+gui-apps/noctalia::guru
 
 # hossie
 app-misc/claude-desktop-official::hossie
@@ -12,15 +13,20 @@ gui-apps/hypridle::hyproverlay
 gui-apps/hyprlock::hyproverlay
 gui-apps/hyprpaper::hyproverlay
 gui-apps/hyprpicker::hyproverlay
+gui-apps/hyprshutdown::hyproverlay
 gui-libs/aquamarine::hyproverlay
 gui-libs/hyprcursor::hyproverlay
 gui-libs/hyprland-guiutils::hyproverlay
 dev-libs/hyprland-protocols::hyproverlay
+gui-libs/hyprland-qt-support::hyproverlay
+gui-apps/hyprpwcenter::hyproverlay
+gui-libs/hyprqt6engine::hyproverlay
 gui-libs/hyprtoolkit::hyproverlay
 gui-libs/hyprutils::hyproverlay
 gui-libs/hyprwire::hyproverlay
 gui-libs/xdg-desktop-portal-hyprland::hyproverlay
 gui-wm/hyprland::hyproverlay
+sys-auth/hyprpolkitagent::hyproverlay
 
 # steam-overlay
 games-util/steam-launcher::steam-overlay
