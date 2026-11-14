@@ -11,24 +11,24 @@
 */* INPUT_DEVICES: libinput
 
 #================================================================================================
-# user packages - personal apps
+# user packages - personal apps and environment
 #================================================================================================
-app-emulation/libvirt   fuse lvm numa pcap
-app-emulation/punes     -ffmpeg
-app-emulation/qemu      QEMU_SOFTMMU_TARGETS: x86_64 QEMU_USER_TARGETS: x86_64
-media-video/obs-studio  lua screencast speex v4l
-net-print/hplip         scanner
-#net-misc/moonlight     cuda-clang
-net-misc/sunshine       cuda kde svt-av1 trayicon x264 x265
+app-emulation/libvirt        fuse lvm numa pcap
+app-emulation/punes          -ffmpeg
+app-emulation/qemu           QEMU_SOFTMMU_TARGETS: x86_64 QEMU_USER_TARGETS: x86_64
+gui-wm/hyprland              hyprpm
+kde-plasma/discover          flatpak
+kde-plasma/plasma-meta       -crash-handler discover flatpak gtk -kwallet oxygen-theme
+kde-plasma/plasma-workspace	 appstream flatpak screencast
+kde-plasma/kwin	             activities gamepad lock screencast
+media-video/obs-studio       lua screencast speex v4l
+net-print/hplip              scanner
+net-misc/sunshine            cuda kde svt-av1 trayicon x264 x265
 
 #================================================================================================
 # system packages - personal setup
 #================================================================================================
 app-admin/doas                          persist
-kde-plasma/discover                     flatpak
-kde-plasma/plasma-meta                  -crash-handler discover flatpak gtk -kwallet oxygen-theme
-kde-plasma/plasma-workspace	            appstream flatpak screencast
-kde-plasma/kwin	                        activities gamepad lock screencast
 media-libs/noise-suppression-for-voice  lv2
 media-video/pipewire                    extra flatpak lv2 pipewire-alsa sound-server
 sys-apps/fwupd                          tpm uefi
