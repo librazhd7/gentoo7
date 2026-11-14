@@ -17,6 +17,7 @@
 
 #
 #dbus-run-session startplasma-wayland
+#dbus-run-session start-hyprland
 
 #
 #export __GL_THREADED_OPTIMIZATIONS="1"
