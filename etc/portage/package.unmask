@@ -1,9 +1,26 @@
-app-misc/claude-desktop-official::hossie
+# guru
 app-misc/github-desktop-bin::guru
-games-util/steam-launcher::steam-overlay
+
+# hossie
+app-misc/claude-desktop-official::hossie
+
+# hyproverlay
+dev-libs/hyprgraphics::hyproverlay
+dev-libs/hyprlang::hyproverlay
+dev-util/hyprwayland-scanner::hyproverlay
 gui-apps/hypridle::hyproverlay
 gui-apps/hyprlock::hyproverlay
 gui-apps/hyprpaper::hyproverlay
 gui-apps/hyprpicker::hyproverlay
+gui-libs/aquamarine::hyproverlay
+gui-libs/hyprcursor::hyproverlay
+gui-libs/hyprland-guiutils::hyproverlay
+dev-libs/hyprland-protocols::hyproverlay
+gui-libs/hyprtoolkit::hyproverlay
+gui-libs/hyprutils::hyproverlay
+gui-libs/hyprwire::hyproverlay
 gui-libs/xdg-desktop-portal-hyprland::hyproverlay
 gui-wm/hyprland::hyproverlay
+
+# steam-overlay
+games-util/steam-launcher::steam-overlay
