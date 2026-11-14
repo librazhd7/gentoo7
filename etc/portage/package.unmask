@@ -19,6 +19,7 @@ gui-libs/hyprcursor::hyproverlay
 gui-libs/hyprland-guiutils::hyproverlay
 dev-libs/hyprland-protocols::hyproverlay
 gui-libs/hyprland-qt-support::hyproverlay
+gui-apps/hyprlauncher::hyproverlay
 gui-apps/hyprpwcenter::hyproverlay
 gui-libs/hyprqt6engine::hyproverlay
 gui-libs/hyprtoolkit::hyproverlay
