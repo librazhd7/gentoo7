@@ -41,7 +41,6 @@ games-action/minecraft-launcher
 games-arcade/supertux
 games-util/game-device-udev-rules
 games-util/steam-launcher
-gui-wm/gamescope
 media-fonts/corefonts
 media-fonts/noto
 media-fonts/noto-cjk
@@ -63,6 +62,7 @@ net-misc/moonlight
 net-misc/networkmanager
 net-misc/sunshine
 net-print/hplip
+net-vpn/tailscale
 net-wireless/bluez
 sys-apps/ethtool
 sys-apps/flatpak
