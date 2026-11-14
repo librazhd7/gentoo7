@@ -1,0 +1,12 @@
+gui-apps/hypridle
+gui-apps/hyprlauncher
+gui-apps/hyprlock
+gui-apps/hyprpaper
+gui-apps/hyprpicker
+gui-apps/hyprpwcenter
+gui-apps/hyprshutdown
+gui-libs/hyprland-qt-support
+gui-libs/hyprqt6engine
+gui-libs/xdg-desktop-portal-hyprland
+gui-wm/hyprland
+sys-auth/hyprpolkitagent
