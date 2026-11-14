@@ -5,6 +5,7 @@ gui-apps/hyprpaper
 gui-apps/hyprpicker
 gui-apps/hyprpwcenter
 gui-apps/hyprshutdown
+gui-apps/noctalia
 gui-libs/hyprland-qt-support
 gui-libs/hyprqt6engine
 gui-libs/xdg-desktop-portal-hyprland
