@@ -2,4 +2,9 @@ app-misc/claude-desktop-official::hossie
 app-misc/github-desktop-bin::guru
 games-util/game-device-udev-rules::steam-overlay
 games-util/steam-launcher::steam-overlay
+gui-apps/hypridle::hyproverlay
+gui-apps/hyprlock::hyproverlay
+gui-apps/hyprpaper::hyproverlay
+gui-apps/hyprpicker::hyproverlay
+gui-libs/xdg-desktop-portal-hyprland::hyproverlay
 sys-libs/libudev-compat::steam-overlay
