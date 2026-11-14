@@ -6,3 +6,4 @@ gui-apps/hyprlock::hyproverlay
 gui-apps/hyprpaper::hyproverlay
 gui-apps/hyprpicker::hyproverlay
 gui-libs/xdg-desktop-portal-hyprland::hyproverlay
+gui-wm/hyprland::hyproverlay
