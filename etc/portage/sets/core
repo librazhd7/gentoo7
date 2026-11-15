@@ -98,6 +98,7 @@ sys-power/acpid
 sys-power/thermald
 sys-process/htop
 www-client/google-chrome
+www-client/librewolf
 x11-apps/mesa-progs
 x11-base/xwayland
 x11-drivers/nvidia-drivers
