@@ -18,7 +18,7 @@ app-emulation/punes          -ffmpeg
 app-emulation/qemu           QEMU_SOFTMMU_TARGETS: x86_64 QEMU_USER_TARGETS: x86_64
 gui-wm/hyprland              hyprpm
 kde-plasma/discover          flatpak
-kde-plasma/plasma-meta       -crash-handler discover flatpak gtk -kwallet oxygen-theme
+kde-plasma/plasma-meta       -crash-handler discover flatpak gtk oxygen-theme
 kde-plasma/plasma-workspace	 appstream flatpak screencast
 kde-plasma/kwin	             activities gamepad lock screencast
 media-video/obs-studio       lua screencast speex v4l
