@@ -1,5 +1,6 @@
 */*::guru
 */*::hossie
 */*::hyproverlay
+*/*::librewolf
 */*::steam-overlay
 dev-qt/qtwebengine
