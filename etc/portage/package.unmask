@@ -30,5 +30,8 @@ gui-libs/xdg-desktop-portal-hyprland::hyproverlay
 gui-wm/hyprland::hyproverlay
 sys-auth/hyprpolkitagent::hyproverlay
 
+# librewolf
+www-client/librewolf::librewolf
+
 # steam-overlay
 games-util/steam-launcher::steam-overlay
