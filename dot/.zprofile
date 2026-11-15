@@ -20,9 +20,6 @@
 #dbus-run-session start-hyprland
 
 #
-#export __GL_THREADED_OPTIMIZATIONS="1"
-
-#
 export __GLX_VENDOR_LIBRARY_NAME="nvidia"
 export __NV_PRIME_RENDER_OFFLOAD="1"
 export __VK_LAYER_NV_optimus="NVIDIA_only"
@@ -33,7 +30,7 @@ export _JAVA_AWT_WM_NONREPARENTING="1"
 #
 #export CLUTTER_BACKEND="wayland"
 export GBM_BACKEND="nvidia-drm"
-export GDK_BACKEND="wayland,x11"
+export GDK_BACKEND="wayland,x11,*"
 
 #
 export GLFW_IM_MODULE="ibus"
@@ -47,18 +44,18 @@ export SDL_AUDIODRIVER="pipewire"
 export SDL_VIDEODRIVER="wayland"
 
 #
+export QT_AUTO_SCREEN_SCALE_FACTOR="1"
 export QT_QPA_PLATFORM="wayland;xcb"
+export QT_QPA_PLATFORMTHEME="qt6ct"
 
 #
 export PROTON_USE_NTSYNC="1"
 export WINE_NT_SYNC="1"
-export MANGOHUD="1"
 
 #
 export WEBKIT_DISABLE_DMABUF_RENDERER="1"
 
 #
-#export XDG_CURRENT_DESKTOP="ICEWM"
-#export XDG_SESSION_DESKTOP="icewm-session"
-#export XDG_SESSION_TYPE="x11"
-#export XKB_DEFAULT_LAYOUT="se"
+#export XDG_CURRENT_DESKTOP="KDE"
+#export XDG_SESSION_DESKTOP="KDE"
+#export XDG_SESSION_TYPE="wayland"
