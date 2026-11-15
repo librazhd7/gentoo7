@@ -1,6 +1,7 @@
 */*::guru
 */*::hossie
 */*::hyproverlay
+*/*::librewolf
 */*::steam-overlay
 games-util/game-device-udev-rules
 sys-libs/libudev-compat
