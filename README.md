@@ -37,8 +37,8 @@
 - [x] ~~tmpfs~~
 - [x] ~~tpm2~~
 - [x] uki
-- [x] wayland
-- [x] xorg
+- [x] wayland (hyprland/kde)
+- [x] xorg (icewm)
 - [x] zsh
 - [x] zswap
 
@@ -326,7 +326,6 @@ cp -v /usr/share/limine/BOOTX64.EFI /boot/EFI/BOOT/
 | `cups.service (#)`                     | `virtstoraged.socket (#)`   | |
 | `dkms.service (#)`                     | |
 | ~~`dnsmasq.service (#)`~~              | |
-| `gammastep.service ($)`                | |
 | `getty@tty1.service (#)`               | |
 | `libvirtd.service (#)`                 | |
 | `lvm2-monitor.service (#)`             | |
@@ -470,14 +469,14 @@ emaint sync -r guru
 emerge --ask app-misc/github-desktop-bin
 
 #
-eselect repository enable steam-overlay
-emaint sync -r steam-overlay
-emerge --ask games-util/steam-launcher
-
-#
 eselect repository enable hossie
 emaint sync -r hossie
 emerge --ask app-misc/claude-desktop-official
+
+#
+eselect repository enable steam-overlay
+emaint sync -r steam-overlay
+emerge --ask games-util/steam-launcher
 ```
 
 ### zsh, nvidia, pipewire, virtualization[^20] (needs updating)
@@ -506,7 +505,7 @@ curl -fsSL https://tailscale.com/install.sh | sh
 > connect to __tailscale__ (login if needed): `tailscale up`                             \
 > configure the __tailscale cli__ to not require doas/sudo: `tailscale set --operator=$USER`
 
-### flatpak (kde integration)
+### flatpak (w/ kde integration)
 ```
 #
 emerge --ask sys-apps/flatpak kde-plasma/flatpak-kcm
