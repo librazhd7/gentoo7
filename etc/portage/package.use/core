@@ -1,4 +1,8 @@
 #================================================================================================
+# global use flags are managed in '/etc/portage/make.conf' and thus inherited here
+# local use flags or explicit per-package overrides are managed in '/etc/portage/package.use/*'
+# see: https://github.com/librazhd7/gentoo7/blob/main/etc/portage/make.conf
+#================================================================================================
 # use_expand flags - set in /etc/portage/make.conf can lead to ordering issues with portage
 #================================================================================================
 # enabling instruction set and other cpu-specific features
@@ -19,11 +23,10 @@ app-emulation/qemu           QEMU_SOFTMMU_TARGETS: x86_64 QEMU_USER_TARGETS: x86
 gui-wm/hyprland              hyprpm
 kde-plasma/discover          flatpak
 kde-plasma/plasma-meta       -crash-handler discover flatpak gtk oxygen-theme
-kde-plasma/plasma-workspace	 appstream flatpak screencast
-kde-plasma/kwin	             activities gamepad lock screencast
-media-video/obs-studio       lua screencast speex v4l
-net-print/hplip              scanner
-net-misc/sunshine            cuda kde svt-av1 trayicon x264 x265
+kde-plasma/plasma-workspace	 appstream flatpak
+kde-plasma/kwin	             activities gamepad lock
+media-video/obs-studio       lua speex
+net-misc/sunshine            kde svt-av1 trayicon x264 x265
 
 #================================================================================================
 # system packages - personal setup
@@ -31,15 +34,14 @@ net-misc/sunshine            cuda kde svt-av1 trayicon x264 x265
 app-admin/doas                          persist
 media-libs/noise-suppression-for-voice  lv2
 media-video/pipewire                    extra flatpak lv2 pipewire-alsa sound-server
-sys-apps/fwupd                          tpm uefi
+sys-apps/fwupd                          tpm
 sys-apps/systemd                        boot
 sys-apps/xdg-desktop-portal             flatpak
 sys-boot/limine                         -bios -bios-cd -bios-pxe -uefi-aarch64 -uefi-cd -uefi-ia32 -uefi-loongarch64 -uefi-riscv64
-sys-devel/gcc                           lto pgo
+sys-devel/gcc                           pgo
 sys-fs/lvm2                             lvm thin
-sys-kernel/gentoo-sources               experimental modules-compress symlink
-sys-kernel/gentoo-kernel                hardened modules-compress modules-sign secureboot
-sys-kernel/gentoo-kernel-bin            modules-compress
+sys-kernel/gentoo-sources               experimental
+sys-kernel/gentoo-kernel                modules-sign secureboot
 sys-kernel/installkernel                dracut uki
 sys-libs/glibc                          hash-sysv-compat stack-realign
-x11-drivers/nvidia-drivers              kernel-open
+x11-drivers/nvidia-drivers              kernel-open powerd
