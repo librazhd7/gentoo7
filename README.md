@@ -16,19 +16,19 @@
 - [x] bluetooth
 - [x] dracut
 - [x] flatpak
-- [x] gaming (gamescope/steam/wine)
+- [x] gaming (__gamescope__/__steam__/__wine__)
 - [x] guru
-- [x] hybrid graphics (optimus)
+- [x] hybrid graphics (__optimus__)
 - [x] kernel
 - [x] limine
-- [x] lvm thin overprovisioning (2:1 ratio)
+- [x] lvm thin overprovisioning (__2:1__)
 - [x] msi-ec
 - [x] networking
 - [x] pipewire
 - [x] portage optimizations
-- [x] power management
+- [x] power management (__tlp__/__tuned__)
 - [x] printing
-- [x] openrgb (i2c)
+- [x] openrgb (__i2c__)
 - [x] qemu
 - [x] ~~samba~~
 - [x] ~~secure boot~~
@@ -37,8 +37,8 @@
 - [x] ~~tmpfs~~
 - [x] ~~tpm2~~
 - [x] uki
-- [x] wayland (hyprland/kde)
-- [x] xorg (icewm)
+- [x] wayland (__hyprland__/__kde__)
+- [x] xorg (__icewm__)
 - [x] zsh
 - [x] zswap
 
@@ -49,6 +49,14 @@
 * samsung ddr5 (16gb)
 * micron 2400 mtfdkba512qfm nvme (512gb)
 * intel ax201
+
+### to do
+- overhaul readme index for proper sectional navigation
+- reference docs & files in the repository
+- scripts for applying repo-specific configurations and installing gentoo automatically
+- more emphasis and maybe philosophical view change on minimal global/local use flags
+- proper documentation regarding command issuing throughout the guide
+- adding more sections by separating/slimming down others (__higher clarity in sections needed__)
 
 ### contents
 | system                                                                                                    | purpose |
@@ -144,13 +152,13 @@ mkfs.xfs -m finobt=1,reflink=1,rmapbt=1 /dev/mapper/tux-root
 ```
 
 > [!NOTE]
-> for disk encryption with `luks2` by using `dm-crypt` (optional) see below:
+> for disk encryption with `luks2` by using `dm-crypt` (__optional__) see below:
 > ```
 > cryptsetup luksFormat --type luks2 --cipher aes-xts-plain64 --key-size 512 --pbkdf argon2id /dev/nvme0n1p2
 > cryptsetup luksOpen /dev/nvme0n1p2 root
 > cryptsetup refresh --allow-discards root
 > ```
-> for configuring `dm-integrity` by using `integritysetup` (recommended) see below:
+> for configuring `dm-integrity` by using `integritysetup` (__recommended__) see below:
 > ```
 > integritysetup format /dev/nvme0n1p2
 > integritysetup open /dev/nvme0n1p2 root
@@ -552,15 +560,6 @@ make dkms-install
 > ```
 
 ---
-
-### to do
-- proper referencing to docs & files in the repository
-- make an index to navigate the readme fully
-- make a section for explaining the functionality and relation of every custom file
-- scripts for installing and configuring gentoo automatically
-- more emphasis on minimal packages by use flags
-- binary gentoo package setup
-- document commands more and why they're issued
 
 ### docs
 - [__acpi__][docs/acpi]
