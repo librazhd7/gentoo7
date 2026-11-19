@@ -13,6 +13,7 @@
 
 ### features
 - [x] ~amd64
+- [x] apparmor
 - [x] bluetooth
 - [x] dracut
 - [x] flatpak
