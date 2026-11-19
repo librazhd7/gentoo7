@@ -64,6 +64,9 @@ net-misc/sunshine
 net-print/hplip
 net-vpn/tailscale
 net-wireless/bluez
+sec-policy/apparmor-profiles
+sys-apps/apparmor
+sys-apps/apparmor-utils
 sys-apps/ethtool
 sys-apps/flatpak
 sys-apps/fwupd
