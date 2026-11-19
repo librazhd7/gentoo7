@@ -327,35 +327,36 @@ cp -v /usr/share/limine/BOOTX64.EFI /boot/EFI/BOOT/
 ---
 
 ### systemd[^16]
-| services                               | sockets                     | timers             |
-|----------------------------------------|-----------------------------|--------------------|
-| `acpid.service (#)`                    | `pipewire-pulse.socket ($)` | `fstrim.timer (#)` |
-| `bluetooth.service (#)`                | ~~`pulseaudio.socket ($)`~~ | |
-| `cups.service (#)`                     | `virtstoraged.socket (#)`   | |
-| `dkms.service (#)`                     | |
-| ~~`dnsmasq.service (#)`~~              | |
-| `getty@tty1.service (#)`               | |
-| `libvirtd.service (#)`                 | |
-| `lvm2-monitor.service (#)`             | |
-| `modprobed-db.service ($)`             | |
-| `NetworkManager.service (#)`           | |
-| ~~`nmbd.service (#)`~~                 | |
-| ~~`pulseaudio.service ($)`~~           | |
-| `sddm.service (#)`                     | |
-| ~~`smbd.service (#)`~~                 | |
-| `sshd.service (#)`                     | |
-| ~~`systemd-boot-update.service (#)`~~  | |
-| ~~`systemd-modules-load.service (#)`~~ | |
-| ~~`systemd-networkd.service (#)`~~     | |
-| `systemd-timesyncd.service (#)`        | |
-| `tailscaled.service (#)`               | |
-| `thermald.service (#)`                 | |
-| `tlp.service (#)`                      | |
-| `tuned.service (#)` (kde)              | |
-| `virtnetworkd.service (#)`             | |
-| `virtqemud.service (#)`                | |
-| `virtlogd.service (#)`                 | |
-| `wireplumber.service ($)`              | |
+| services                                   | sockets                         | timers             |
+|--------------------------------------------|---------------------------------|--------------------|
+| `acpid.service` (__#__)                    | `pipewire-pulse.socket` (__$__) | `fstrim.timer` (__#__) |
+| `apparmor.service` (__#__)                 | |
+| `bluetooth.service` (__#__)                | ~~`pulseaudio.socket`~~ (__$__) | |
+| `cups.service` (__#__)                     | `virtstoraged.socket` (__#__)   | |
+| `dkms.service` (__#__)                     | |
+| ~~`dnsmasq.service`~~ (__#__)              | |
+| `getty@tty1.service` (__#__)               | |
+| `libvirtd.service` (__#__)                 | |
+| `lvm2-monitor.service` (__#__)             | |
+| `modprobed-db.service` (__$__)             | |
+| `NetworkManager.service` (__#__)           | |
+| ~~`nmbd.service`~~ (__#__)                 | |
+| ~~`pulseaudio.service`~~ (__$__)           | |
+| `sddm.service` (__#__)                     | |
+| ~~`smbd.service` (__#__)~~                 | |
+| `sshd.service` (__#__)                     | |
+| ~~`systemd-boot-update.service`~~ (__#__)  | |
+| ~~`systemd-modules-load.service`~~ (__#__) | |
+| ~~`systemd-networkd.service`~~ (__#__)     | |
+| `systemd-timesyncd.service` (__#__)        | |
+| `tailscaled.service` (__#__)               | |
+| `thermald.service` (__#__)                 | |
+| `tlp.service` (__#__)                      | |
+| `tuned.service` (__#__) (__kde__)          | |
+| `virtnetworkd.service` (__#__)             | |
+| `virtqemud.service` (__#__)                | |
+| `virtlogd.service` (__#__)                 | |
+| `wireplumber.service` (__$__)              | |
 
 ### configuring systemd
 ```
