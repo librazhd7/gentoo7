@@ -25,7 +25,7 @@ kde-plasma/discover          flatpak
 kde-plasma/plasma-meta       -crash-handler discover flatpak gtk oxygen-theme
 kde-plasma/plasma-workspace	 appstream flatpak
 kde-plasma/kwin	             activities gamepad lock
-media-video/obs-studio       lua speex
+media-video/obs-studio       lua
 net-misc/sunshine            kde svt-av1 trayicon x264 x265
 
 #================================================================================================
@@ -37,11 +37,11 @@ media-video/pipewire                    extra flatpak lv2 pipewire-alsa sound-se
 sys-apps/fwupd                          tpm
 sys-apps/systemd                        boot
 sys-apps/xdg-desktop-portal             flatpak
-sys-boot/limine                         -bios -bios-cd -bios-pxe -uefi-aarch64 -uefi-cd -uefi-ia32 -uefi-loongarch64 -uefi-riscv64
+sys-boot/limine                         -* uefi-x86-64
 sys-devel/gcc                           pgo
 sys-fs/lvm2                             lvm thin
 sys-kernel/gentoo-sources               experimental
-sys-kernel/gentoo-kernel                modules-sign secureboot
 sys-kernel/installkernel                dracut uki
+sys-kernel/linux-firmware               compress-zstd
 sys-libs/glibc                          hash-sysv-compat stack-realign
 x11-drivers/nvidia-drivers              kernel-open powerd
