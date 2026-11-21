@@ -25,8 +25,8 @@ kde-plasma/discover          flatpak
 kde-plasma/plasma-meta       -backup -browser-integration -crash-handler discover flatpak gtk oxygen-theme
 kde-plasma/plasma-workspace	 appstream flatpak
 kde-plasma/kwin	             activities gamepad lock
-media-video/obs-studio       lua
 net-misc/sunshine            kde svt-av1 trayicon x264 x265
+net-print/hplip              kde
 
 #================================================================================================
 # system packages - personal setup
