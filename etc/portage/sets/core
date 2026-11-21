@@ -56,7 +56,6 @@ media-sound/alsa-utils
 media-video/libva-utils
 media-video/obs-studio
 media-video/pipewire
-media-video/vlc
 media-video/wireplumber
 net-misc/moonlight
 net-misc/networkmanager
@@ -99,7 +98,7 @@ sys-kernel/modprobed-db
 sys-power/acpid
 sys-power/thermald
 sys-process/htop
-www-client/google-chrome
+#www-client/google-chrome
 www-client/librewolf-bin
 x11-apps/mesa-progs
 x11-base/xwayland
