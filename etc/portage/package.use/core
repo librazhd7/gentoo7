@@ -15,6 +15,39 @@
 */* INPUT_DEVICES: libinput
 
 #================================================================================================
+# personal setup (@world)
+#================================================================================================
+app-admin/doas persist
+app-admin/eclean-kernel zstd
+app-arch/zstd verify-sig zlib
+app-editors/nano magic unicode verify-sig
+app-emulation/punes cg ffmpeg X
+app-emulation/wine-staging bluetooth ffmpeg opencl pulseaudio udev usb v4l vaapi wayland
+app-emulation/winetricks gui
+app-i18n/ibus appindicator libnotify systemd wayland X
+app-misc/fastfetch dbus drm elf opencl opengl pulseaudio vaapi vdpau vulkan wayland X xrandr
+app-misc/solaar appindicator dbus libnotify wayland
+app-shells/zsh pcre verify-sig
+dev-build/cmake gui verify-sig
+dev-java/openjdk-bin alsa source
+dev-libs/openssl ktls verify-sig
+dev-util/vulkan-tools wayland X
+games-arcade/supertux egl
+games-util/game-device-udev-rules systemd
+media-fonts/corefonts tahoma X
+media-fonts/noto X
+media-fonts/noto-cjk X
+media-fonts/noto-emoji icons X
+media-libs/libva-intel-media-driver X
+media-libs/noise-suppression-for-voice lv2
+media-libs/openal dbus gui pipewire sdl
+media-plugins/alsa-plugins ffmpeg libsamplerate speex verify-sig
+media-sound/alsa-utils verify-sig
+media-video/libva-utils wayland X
+media-video/obs-studio lua nvenc screencast speex truetype v4l wayland
+media-video/pipewire bluetooth dbus echo-cancel extra ffmpeg flatpak gstreamer loudness lv2 pipewire-alsa pulseaudio sound-server ssl systemd v4l X
+
+#================================================================================================
 # user packages - personal apps and environment
 #================================================================================================
 app-emulation/libvirt        fuse lvm numa pcap
