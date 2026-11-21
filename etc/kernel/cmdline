@@ -10,5 +10,5 @@ zswap.accept_threshold_percent=80
 zswap.shrinker_enabled=1
 #acpi_backlight=native
 apparmor=1 security=apparmor
-nvidia-drm.modeset=1 nvidia-drm.fbdev=1
+nvidia-drm.fbdev=1
 quiet splash
