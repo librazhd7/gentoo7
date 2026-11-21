@@ -97,6 +97,7 @@ sys-kernel/linux-headers
 sys-kernel/modprobed-db
 sys-power/acpid
 sys-power/thermald
+sys-process/audit
 sys-process/htop
 #www-client/google-chrome
 www-client/librewolf-bin
