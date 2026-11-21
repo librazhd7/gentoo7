@@ -22,7 +22,7 @@ app-emulation/punes          -ffmpeg
 app-emulation/qemu           QEMU_SOFTMMU_TARGETS: x86_64 QEMU_USER_TARGETS: x86_64
 gui-wm/hyprland              hyprpm
 kde-plasma/discover          flatpak
-kde-plasma/plasma-meta       -crash-handler discover flatpak gtk oxygen-theme
+kde-plasma/plasma-meta       -backup -browser-integration -crash-handler discover flatpak gtk oxygen-theme
 kde-plasma/plasma-workspace	 appstream flatpak
 kde-plasma/kwin	             activities gamepad lock
 media-video/obs-studio       lua
@@ -37,7 +37,8 @@ media-video/pipewire                    extra flatpak lv2 pipewire-alsa sound-se
 sys-apps/fwupd                          tpm
 sys-apps/systemd                        boot
 sys-apps/xdg-desktop-portal             flatpak
-sys-boot/limine                         -* uefi-x86-64
+sys-auth/polkit                         kde
+sys-boot/limine                         -* llvm_slot_22 uefi-x86-64
 sys-devel/gcc                           pgo
 sys-fs/lvm2                             lvm thin
 sys-kernel/gentoo-sources               experimental
