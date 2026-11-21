@@ -332,6 +332,7 @@ cp -v /usr/share/limine/BOOTX64.EFI /boot/EFI/BOOT/
 |--------------------------------------------|---------------------------------|--------------------|
 | `acpid.service` (__#__)                    | `pipewire-pulse.socket` (__$__) | `fstrim.timer` (__#__) |
 | `apparmor.service` (__#__)                 | |
+| `auditd.service` (__#__)                   | |
 | `bluetooth.service` (__#__)                | ~~`pulseaudio.socket`~~ (__$__) | |
 | `cups.service` (__#__)                     | `virtstoraged.socket` (__#__)   | |
 | `dkms.service` (__#__)                     | |
