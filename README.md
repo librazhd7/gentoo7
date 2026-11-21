@@ -8,8 +8,8 @@
 
 ### why
 * keep track of all changes made to my system and resources used along the way
-* keep an online/offline copy of the repository on standby as reference
-* installing a source based distribution like gentoo and reading docs all day sounded fun
+* keep an online/offline copy of the repository on standby as reference to reproduce the setup whenever
+* installing a source based distribution like gentoo and reading docs all day sounded fun 😴
 
 ### features
 - [x] ~amd64
