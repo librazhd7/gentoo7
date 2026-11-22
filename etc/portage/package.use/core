@@ -88,7 +88,7 @@ sys-process/audit io-uring ssl
 www-client/google-chrome qt6
 x11-apps/mesa-progs gles2 vulkan wayland X
 x11-base/xwayland libei systemd xcsecurity
-x11-drivers/nvidia-drivers kernel-open persistenced powerd wayland
+x11-drivers/nvidia-drivers kernel-open modules-compress persistenced powerd wayland
 x11-terms/kitty verify-sig wayland
 #================================================================================================
 # package dependencies - ...
