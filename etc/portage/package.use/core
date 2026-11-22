@@ -86,8 +86,19 @@ x11-drivers/nvidia-drivers kernel-open persistenced powerd wayland
 x11-terms/kitty verify-sig wayland
 
 #================================================================================================
-# needs rework
+# package dependencies - ...
 #================================================================================================
+#app-arch/brotli          abi_x86_32
+media-gfx/sane-backends  hp
+#media-libs/freetype      brotli
+media-libs/libsdl2       kms
+#media-libs/tiff          zstd lzma
+#net-dns/avahi            python
+net-libs/gnutls          tools pkcs11
+#net-libs/ngtcp2          gnutls
+sys-libs/zlib            minizip
+
+
 app-emulation/libvirt        fuse lvm numa pcap
 app-emulation/qemu           QEMU_SOFTMMU_TARGETS: x86_64 QEMU_USER_TARGETS: x86_64
 gui-wm/hyprland              hyprpm
