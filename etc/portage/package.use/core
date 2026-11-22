@@ -34,6 +34,11 @@ dev-libs/openssl ktls verify-sig
 dev-util/vulkan-tools wayland X
 games-arcade/supertux egl
 games-util/game-device-udev-rules systemd
+gui-wm/hyprland hyprpm
+kde-plasma/discover flatpak
+kde-plasma/plasma-meta -backup bluetooth -browser-integration -crash-handler cups discover -elogind flatpak gtk oxygen-theme systemd virtualkeyboard X
+kde-plasma/plasma-workspace	appstream flatpak -handbook networkmanager screencast systemd
+kde-plasma/kwin activities gamepad -handbook lock screencast systemd X
 media-fonts/corefonts tahoma X
 media-fonts/noto X
 media-fonts/noto-cjk X
@@ -61,6 +66,7 @@ sys-apps/pciutils dns verify-sig zlib
 sys-apps/pv verify-sig
 sys-apps/systemd acl apparmor audit bpf boot cryptsetup policykit tpm
 sys-apps/xdg-desktop-portal flatpak gstreamer seccomp systemd udev
+sys-auth/polkit kde
 sys-auth/rtkit systemd
 sys-boot/limine -bios -bios-cd -bios-pxe -uefi-aarch64 -uefi-cd -uefi-ia32 -uefi-loongarch64 -uefi-riscv64
 sys-devel/gcc cet default-stack-clash-protection default-znow hardened lto pch pgo multilib zstd
@@ -100,9 +106,3 @@ sys-libs/zlib            minizip
 
 app-emulation/libvirt        fuse lvm numa pcap
 app-emulation/qemu           QEMU_SOFTMMU_TARGETS: x86_64 QEMU_USER_TARGETS: x86_64
-gui-wm/hyprland              hyprpm
-kde-plasma/discover          flatpak
-kde-plasma/plasma-meta       -backup -browser-integration -crash-handler discover flatpak gtk oxygen-theme
-kde-plasma/plasma-workspace	 appstream flatpak
-kde-plasma/kwin	             activities gamepad lock
-sys-auth/polkit                         kde
