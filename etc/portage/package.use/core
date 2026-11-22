@@ -15,7 +15,7 @@
 */* INPUT_DEVICES: libinput
 
 #================================================================================================
-# personal setup (@world)
+# user and system packages - personal apps and environment setup (@world)
 #================================================================================================
 app-admin/doas persist
 app-admin/eclean-kernel zstd
@@ -59,7 +59,7 @@ sys-apps/flatpak policykit seccomp systemd X
 sys-apps/fwupd bluetooth policykit readline seccomp systemd tpm uefi verify-sig
 sys-apps/pciutils dns verify-sig zlib
 sys-apps/pv verify-sig
-sys-apps/systemd acl apparmor audit bpf cryptsetup policykit tpm
+sys-apps/systemd acl apparmor audit bpf boot cryptsetup policykit tpm
 sys-apps/xdg-desktop-portal flatpak gstreamer seccomp systemd udev
 sys-auth/rtkit systemd
 sys-boot/limine -bios -bios-cd -bios-pxe -uefi-aarch64 -uefi-cd -uefi-ia32 -uefi-loongarch64 -uefi-riscv64
@@ -86,7 +86,7 @@ x11-drivers/nvidia-drivers kernel-open persistenced powerd wayland
 x11-terms/kitty verify-sig wayland
 
 #================================================================================================
-# user packages - personal apps and environment
+# needs rework
 #================================================================================================
 app-emulation/libvirt        fuse lvm numa pcap
 app-emulation/qemu           QEMU_SOFTMMU_TARGETS: x86_64 QEMU_USER_TARGETS: x86_64
@@ -95,7 +95,4 @@ kde-plasma/discover          flatpak
 kde-plasma/plasma-meta       -backup -browser-integration -crash-handler discover flatpak gtk oxygen-theme
 kde-plasma/plasma-workspace	 appstream flatpak
 kde-plasma/kwin	             activities gamepad lock
-#================================================================================================
-# system packages - personal setup
-#================================================================================================
 sys-auth/polkit                         kde
