@@ -17,79 +17,55 @@
 # user and system packages - personal setup (@world) (cleanup by balancing globals over to 'etc/portage/make.conf'?)
 #================================================================================================
 app-admin/doas persist
-app-admin/eclean-kernel zstd
-app-arch/zstd verify-sig zlib
-app-editors/nano magic unicode verify-sig
-app-emulation/punes -ffmpeg X
-app-emulation/wine-staging ffmpeg pulseaudio udev usb vaapi wayland
+app-editors/nano minimal
+app-emulation/punes -ffmpeg
+app-emulation/wine-staging ffmpeg pulseaudio udev usb vaapi
 app-emulation/winetricks gui
-app-i18n/ibus appindicator libnotify systemd wayland X
-app-misc/fastfetch dbus drm elf opengl pulseaudio vulkan wayland X
-app-misc/solaar appindicator dbus libnotify wayland
-app-shells/zsh pcre verify-sig
-dev-build/cmake verify-sig
+app-i18n/ibus appindicator libnotify
+app-misc/fastfetch dbus drm elf opengl pulseaudio
+app-misc/solaar appindicator dbus libnotify
+app-shells/zsh pcre
 dev-java/openjdk-bin alsa
-dev-libs/openssl ktls verify-sig
-dev-util/vulkan-tools wayland X
+dev-libs/openssl ktls
 games-arcade/supertux egl
-games-util/game-device-udev-rules systemd
 gui-wm/hyprland hyprpm
 kde-plasma/discover flatpak
-kde-plasma/plasma-meta -backup bluetooth -browser-integration -crash-handler cups discover -elogind flatpak gtk oxygen-theme systemd virtualkeyboard X
-kde-plasma/plasma-workspace	appstream flatpak -handbook networkmanager screencast systemd
-kde-plasma/kwin activities gamepad -handbook lock screencast systemd X
-media-fonts/corefonts tahoma X
-media-fonts/noto X
-media-fonts/noto-cjk X
-media-fonts/noto-emoji icons X
-media-libs/libva-intel-media-driver X
+kde-plasma/plasma-meta -backup bluetooth -browser-integration -crash-handler cups discover -elogind flatpak gtk oxygen-theme virtualkeyboard
+kde-plasma/plasma-workspace	appstream flatpak -handbook networkmanager screencast
+kde-plasma/kwin activities gamepad -handbook lock screencast
+media-fonts/corefonts tahoma
 media-libs/noise-suppression-for-voice lv2
-media-libs/openal dbus gui pipewire sdl
-#media-plugins/alsa-plugins ffmpeg libsamplerate speex verify-sig
-#media-sound/alsa-utils verify-sig
-media-video/ffmpeg cuda-clang lame lzma nvenc opengl openssl opus pulseaudio speex svt-av1 v4l vaapi vdpau verify-sig vpx vulkan X x264 x265
-media-video/libva-utils wayland X
-media-video/obs-studio nvenc screencast truetype v4l wayland
-media-video/pipewire bluetooth dbus echo-cancel extra ffmpeg flatpak gstreamer lv2 pipewire-alsa pulseaudio sound-server ssl systemd v4l X
-media-video/wireplumber systemd
-net-misc/moonlight cuda-clang vdpau vulkan wayland X
-net-misc/sunshine cuda kde pipewire systemd svt-av1 trayicon vaapi wayland X x264 x265
-net-print/hplip kde scanner X
-net-wireless/bluez experimental systemd
-sec-policy/apparmor-profiles minimal verify-sig
-sys-apps/apparmor verify-sig
-sys-apps/apparmor-utils verify-sig
-sys-apps/dbus apparmor audit systemd X
-sys-apps/flatpak policykit seccomp systemd X
-sys-apps/fwupd bluetooth policykit seccomp systemd tpm uefi verify-sig
-sys-apps/pciutils dns verify-sig zlib
-sys-apps/pv verify-sig
-sys-apps/systemd acl apparmor audit bpf boot cryptsetup policykit tpm
-sys-apps/xdg-desktop-portal flatpak gstreamer seccomp systemd udev
+media-libs/openal dbus pipewire
+media-video/ffmpeg cuda-clang lame lzma nvenc opengl openssl opus pulseaudio speex svt-av1 v4l vaapi vdpau vpx x264 x265
+media-video/obs-studio nvenc screencast truetype v4l
+media-video/pipewire bluetooth dbus echo-cancel extra ffmpeg gstreamer lv2 pipewire-alsa pulseaudio sound-server v4l
+net-misc/moonlight cuda-clang vdpau
+net-misc/sunshine cuda kde pipewire svt-av1 trayicon vaapi x264 x265
+net-print/hplip kde scanner
+sec-policy/apparmor-profiles minimal
+sys-apps/dbus apparmor audit
+sys-apps/flatpak policykit seccomp
+sys-apps/fwupd bluetooth policykit seccomp tpm uefi
+sys-apps/systemd apparmor audit bpf boot cryptsetup policykit tpm
+sys-apps/xdg-desktop-portal flatpak gstreamer seccomp udev
 sys-auth/polkit kde
-sys-auth/rtkit systemd
 sys-boot/limine -bios -bios-cd -bios-pxe -uefi-aarch64 -uefi-cd -uefi-ia32 -uefi-loongarch64 -uefi-riscv64
-sys-devel/gcc cet default-stack-clash-protection default-znow hardened lto pch pgo multilib zstd
+sys-devel/gcc cet default-stack-clash-protection default-znow hardened lto pch pgo multilib
 sys-firmware/intel-microcode hostonly
 sys-firmware/sof-firmware tools
-sys-fs/cryptsetup nls urandom verify-sig
-sys-fs/lvm2 lvm nvme systemd thin xfs
-sys-fs/ntfs3g acl
-sys-kernel/dkms systemd
-sys-kernel/dracut dracut-cpio systemd
+sys-fs/cryptsetup urandom
+sys-fs/lvm2 lvm nvme thin xfs
+sys-kernel/dracut dracut-cpio
 sys-kernel/gentoo-sources experimental symlink
-sys-kernel/gentoo-kernel hardened modules-compress verify-sig
-sys-kernel/gentoo-kernel-bin modules-compress verify-sig
-sys-kernel/installkernel dracut systemd uki
+sys-kernel/gentoo-kernel hardened modules-compress
+sys-kernel/gentoo-kernel-bin modules-compress
+sys-kernel/installkernel dracut uki
 sys-kernel/linux-firmware -bindist compress-zstd deduplicate
 sys-kernel/linux-headers headers-only
-sys-libs/glibc audit cet clang hash-sysv-compat multilib stack-realign systemd verify-sig
-sys-process/audit io-uring ssl
-www-client/google-chrome qt6
-x11-apps/mesa-progs gles2 vulkan wayland X
-x11-base/xwayland libei systemd xcsecurity
-x11-drivers/nvidia-drivers kernel-open modules-compress persistenced powerd wayland
-x11-terms/kitty verify-sig wayland
+sys-libs/glibc audit cet clang hash-sysv-compat multilib stack-realign
+sys-process/audit io-uring
+x11-base/xwayland libei xcsecurity
+x11-drivers/nvidia-drivers kernel-open modules-compress
 #================================================================================================
 # package dependencies - ...
 #================================================================================================
