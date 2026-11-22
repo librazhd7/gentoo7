@@ -30,7 +30,7 @@ app-shells/zsh pcre
 dev-libs/openssl ktls
 gui-wm/hyprland hyprpm
 kde-plasma/discover flatpak
-kde-plasma/plasma-meta -backup -browser-integration -crash-handler cups discover flatpak gtk oxygen-theme virtualkeyboard
+kde-plasma/plasma-meta cups discover flatpak gtk oxygen-theme virtualkeyboard -backup -browser-integration -crash-handler
 kde-plasma/plasma-workspace	appstream flatpak networkmanager
 kde-plasma/kwin activities gamepad lock
 media-fonts/corefonts tahoma
@@ -46,7 +46,7 @@ sec-policy/apparmor-profiles minimal
 sys-apps/dbus apparmor audit
 sys-apps/flatpak seccomp
 sys-apps/fwupd seccomp tpm uefi
-sys-apps/openrazer modules-compress
+#sys-apps/openrazer modules-compress
 sys-apps/systemd apparmor audit bpf boot cryptsetup tpm
 sys-apps/xdg-desktop-portal flatpak seccomp
 sys-auth/polkit kde
@@ -61,7 +61,7 @@ sys-kernel/gentoo-sources experimental symlink
 sys-kernel/gentoo-kernel hardened modules-compress
 sys-kernel/gentoo-kernel-bin modules-compress
 sys-kernel/installkernel dracut uki
-sys-kernel/linux-firmware -bindist compress-zstd deduplicate
+sys-kernel/linux-firmware compress-zstd deduplicate -bindist
 sys-kernel/linux-headers headers-only
 sys-libs/glibc audit cet clang hash-sysv-compat multilib stack-realign
 sys-process/audit io-uring
@@ -72,7 +72,6 @@ x11-drivers/nvidia-drivers kernel-open modules-compress powerd
 # package dependencies - ...
 #================================================================================================
 #app-arch/brotli          abi_x86_32
-dev-python/pyqt6         webchannel
 media-gfx/sane-backends  hp
 #media-libs/freetype      brotli
 media-libs/libsdl2       kms
