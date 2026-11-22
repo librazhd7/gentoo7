@@ -45,8 +45,8 @@ media-fonts/noto-emoji icons X
 media-libs/libva-intel-media-driver X
 media-libs/noise-suppression-for-voice lv2
 media-libs/openal dbus gui pipewire sdl
-media-plugins/alsa-plugins ffmpeg libsamplerate speex verify-sig
-media-sound/alsa-utils verify-sig
+#media-plugins/alsa-plugins ffmpeg libsamplerate speex verify-sig
+#media-sound/alsa-utils verify-sig
 media-video/ffmpeg cuda-clang lame lzma nvenc opengl openssl opus pulseaudio speex svt-av1 v4l vaapi vdpau verify-sig vpx vulkan X x264 x265
 media-video/libva-utils wayland X
 media-video/obs-studio nvenc screencast truetype v4l wayland
@@ -60,7 +60,7 @@ sec-policy/apparmor-profiles minimal verify-sig
 sys-apps/apparmor verify-sig
 sys-apps/apparmor-utils verify-sig
 sys-apps/flatpak policykit seccomp systemd X
-sys-apps/fwupd bluetooth policykit readline seccomp systemd tpm uefi verify-sig
+sys-apps/fwupd bluetooth policykit seccomp systemd tpm uefi verify-sig
 sys-apps/pciutils dns verify-sig zlib
 sys-apps/pv verify-sig
 sys-apps/systemd acl apparmor audit bpf boot cryptsetup policykit tpm
@@ -72,7 +72,7 @@ sys-devel/gcc cet default-stack-clash-protection default-znow hardened lto pch p
 sys-firmware/intel-microcode hostonly
 sys-firmware/sof-firmware tools
 sys-fs/cryptsetup nls urandom verify-sig
-sys-fs/lvm2 lvm nvme readline systemd thin xfs
+sys-fs/lvm2 lvm nvme systemd thin xfs
 sys-fs/ntfs3g acl
 sys-kernel/dkms systemd
 sys-kernel/dracut dracut-cpio systemd
@@ -82,7 +82,7 @@ sys-kernel/gentoo-kernel-bin modules-compress verify-sig
 sys-kernel/installkernel dracut systemd uki
 sys-kernel/linux-firmware -bindist compress-zstd deduplicate
 sys-kernel/linux-headers headers-only
-sys-libs/glibc audit caps cet clang hash-sysv-compat multilib stack-realign systemd verify-sig
+sys-libs/glibc audit cet clang hash-sysv-compat multilib stack-realign systemd verify-sig
 sys-process/audit io-uring ssl
 www-client/google-chrome qt6
 x11-apps/mesa-progs gles2 vulkan wayland X
