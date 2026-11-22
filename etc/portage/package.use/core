@@ -59,6 +59,7 @@ net-wireless/bluez experimental systemd
 sec-policy/apparmor-profiles minimal verify-sig
 sys-apps/apparmor verify-sig
 sys-apps/apparmor-utils verify-sig
+sys-apps/dbus apparmor audit systemd X
 sys-apps/flatpak policykit seccomp systemd X
 sys-apps/fwupd bluetooth policykit seccomp systemd tpm uefi verify-sig
 sys-apps/pciutils dns verify-sig zlib
