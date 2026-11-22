@@ -28,7 +28,7 @@ app-i18n/ibus appindicator libnotify systemd wayland X
 app-misc/fastfetch dbus drm elf opengl pulseaudio vulkan wayland X
 app-misc/solaar appindicator dbus libnotify wayland
 app-shells/zsh pcre verify-sig
-dev-build/cmake gui verify-sig
+dev-build/cmake verify-sig
 dev-java/openjdk-bin alsa
 dev-libs/openssl ktls verify-sig
 dev-util/vulkan-tools wayland X
