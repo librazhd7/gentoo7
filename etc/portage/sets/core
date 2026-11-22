@@ -71,8 +71,10 @@ sys-apps/flatpak
 sys-apps/fwupd
 sys-apps/i2c-tools
 sys-apps/keyutils
+#sys-apps/openrazer
 sys-apps/pciutils
 sys-apps/plocate
+#sys-apps/polychromatic
 sys-apps/pv
 sys-apps/systemd
 sys-apps/usbutils
