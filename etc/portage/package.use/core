@@ -46,6 +46,7 @@ sec-policy/apparmor-profiles minimal
 sys-apps/dbus apparmor audit
 sys-apps/flatpak seccomp
 sys-apps/fwupd seccomp tpm uefi
+sys-apps/openrazer modules-compress
 sys-apps/systemd apparmor audit bpf boot cryptsetup tpm
 sys-apps/xdg-desktop-portal flatpak seccomp
 sys-auth/polkit kde
@@ -71,6 +72,7 @@ x11-drivers/nvidia-drivers kernel-open modules-compress powerd
 # package dependencies - ...
 #================================================================================================
 #app-arch/brotli          abi_x86_32
+dev-python/pyqt6         webchannel
 media-gfx/sane-backends  hp
 #media-libs/freetype      brotli
 media-libs/libsdl2       kms
