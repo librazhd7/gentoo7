@@ -22,7 +22,7 @@
 - [x] hybrid graphics (__optimus__)
 - [x] kernel
 - [x] limine
-- [x] lvm thin overprovisioning (__2:1__)
+- [x] lvm thin provisioning (__xfs__)
 - [x] msi-ec
 - [x] networking
 - [x] pipewire
@@ -119,7 +119,7 @@
 
 ---
 
-### fdisk[^1] (gpt)[^2] (outdated)
+### fdisk[^1] (gpt)[^2]
 | device           | alloc      | type      | fs    |
 |------------------|------------|-----------|-------|
 | `/dev/nvme0n1p1` | 2gb        | efi (1)   | fat32 |
@@ -144,9 +144,9 @@ lvcreate -L 12G tux -n swap
 mkswap /dev/mapper/tux-swap
 swapon /dev/mapper/tux-swap
 
-# 2:1 overprovisioning ratio of 80% reserved thin pool with 2gb metadata in mind:
+# 80% of ssd reserved for thin pool with 2gb metadata in mind:
 lvcreate --type thin-pool --poolmetadatasize 2G -l 80%VG -n thin tux
-lvcreate -V740G --thinpool tux/thin -n root
+lvcreate -V368.7G --thinpool tux/thin -n root
 
 #
 mkfs.xfs -m finobt=1,reflink=1,rmapbt=1 /dev/mapper/tux-root
