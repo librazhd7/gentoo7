@@ -13,9 +13,8 @@
 
 # for mouse, keyboard, and elan touchpad support
 */* INPUT_DEVICES: libinput
-
 #================================================================================================
-# user and system packages - personal setup (@world) (needs cleanup by balancing globals over to make.conf)
+# user and system packages - personal setup (@world) (cleanup by balancing globals over to 'etc/portage/make.conf'?)
 #================================================================================================
 app-admin/doas persist
 app-admin/eclean-kernel zstd
@@ -90,7 +89,6 @@ x11-apps/mesa-progs gles2 vulkan wayland X
 x11-base/xwayland libei systemd xcsecurity
 x11-drivers/nvidia-drivers kernel-open persistenced powerd wayland
 x11-terms/kitty verify-sig wayland
-
 #================================================================================================
 # package dependencies - ...
 #================================================================================================
