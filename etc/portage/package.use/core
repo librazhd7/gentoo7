@@ -17,7 +17,7 @@
 # user and system packages - personal setup (@world) (cleanup by balancing globals over to 'etc/portage/make.conf'?)
 #================================================================================================
 app-admin/doas persist
-app-editors/nano minimal
+app-editors/nano magic
 app-emulation/wine-staging ffmpeg
 app-emulation/winetricks gui
 app-i18n/ibus appindicator libnotify
