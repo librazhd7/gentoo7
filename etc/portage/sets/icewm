@@ -5,7 +5,6 @@ x11-apps/setxkbmap
 x11-aps/xdm
 x11-apps/xrandr
 x11-base/xorg-server
-x11-misc/idesk
 x11-misc/xcompmgr
 x11-misc/xdotool
 x11-misc/xfe
