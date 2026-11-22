@@ -33,7 +33,7 @@ kde-plasma/kwin activities gamepad lock
 media-fonts/corefonts tahoma
 media-libs/noise-suppression-for-voice lv2
 media-libs/openal pipewire
-media-video/ffmpeg cuda-clang lame lzma nvenc openssl opus speex svt-av1 v4l vdpau vpx x264 x265
+media-video/ffmpeg cuda-clang lame lzma nvenc openssl opus qsv speex svt-av1 v4l vdpau vpx x264 x265
 media-video/obs-studio nvenc v4l
 media-video/pipewire echo-cancel extra ffmpeg lv2 pipewire-alsa sound-server v4l
 net-misc/moonlight cuda-clang vdpau
