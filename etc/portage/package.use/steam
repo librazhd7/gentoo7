@@ -72,7 +72,7 @@ media-libs/openal                  abi_x86_32
 media-libs/opus                    abi_x86_32
 media-libs/tiff                    abi_x86_32
 media-libs/vulkan-layers           abi_x86_32
-media-libs/vulkan-loader           abi_x86_32
+media-libs/vulkan-loader           abi_x86_32 layers
 media-sound/lame                   abi_x86_32
 media-sound/mpg123-base            abi_x86_32
 media-video/pipewire               abi_x86_32
