@@ -21,11 +21,10 @@ app-editors/nano magic
 app-emulation/wine-staging ffmpeg
 app-emulation/winetricks gui
 app-i18n/ibus appindicator libnotify
-app-misc/fastfetch drm elf opengl
+app-misc/fastfetch drm elf
 app-misc/solaar appindicator libnotify
 app-shells/zsh pcre
 dev-libs/openssl ktls
-games-arcade/supertux egl
 gui-wm/hyprland hyprpm
 kde-plasma/discover flatpak
 kde-plasma/plasma-meta -backup -browser-integration -crash-handler cups discover flatpak gtk oxygen-theme virtualkeyboard
@@ -34,8 +33,8 @@ kde-plasma/kwin activities gamepad lock
 media-fonts/corefonts tahoma
 media-libs/noise-suppression-for-voice lv2
 media-libs/openal pipewire
-media-video/ffmpeg cuda-clang lame lzma nvenc opengl openssl opus speex svt-av1 v4l vdpau vpx x264 x265
-media-video/obs-studio nvenc truetype v4l
+media-video/ffmpeg cuda-clang lame lzma nvenc openssl opus speex svt-av1 v4l vdpau vpx x264 x265
+media-video/obs-studio nvenc v4l
 media-video/pipewire echo-cancel extra ffmpeg lv2 pipewire-alsa sound-server v4l
 net-misc/moonlight cuda-clang vdpau
 net-misc/sunshine cuda kde pipewire svt-av1 trayicon x264 x265
