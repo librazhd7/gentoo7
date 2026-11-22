@@ -18,7 +18,6 @@
 #================================================================================================
 app-admin/doas persist
 app-editors/nano minimal
-app-emulation/punes -ffmpeg
 app-emulation/wine-staging ffmpeg
 app-emulation/winetricks gui
 app-i18n/ibus appindicator libnotify
