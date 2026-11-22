@@ -21,7 +21,7 @@ app-admin/doas persist
 app-admin/eclean-kernel zstd
 app-arch/zstd verify-sig zlib
 app-editors/nano magic unicode verify-sig
-app-emulation/punes cg ffmpeg X
+app-emulation/punes cg -ffmpeg X
 app-emulation/wine-staging bluetooth ffmpeg opencl pulseaudio udev usb v4l vaapi wayland
 app-emulation/winetricks gui
 app-i18n/ibus appindicator libnotify systemd wayland X
@@ -46,6 +46,41 @@ media-sound/alsa-utils verify-sig
 media-video/libva-utils wayland X
 media-video/obs-studio lua nvenc screencast speex truetype v4l wayland
 media-video/pipewire bluetooth dbus echo-cancel extra ffmpeg flatpak gstreamer loudness lv2 pipewire-alsa pulseaudio sound-server ssl systemd v4l X
+media-video/wireplumber systemd
+net-misc/moonlight cuda-clang embedded vdpau vulkan wayland X
+net-misc/sunshine cuda kde pipewire systemd svt-av1 trayicon vaapi wayland X x264 x265
+net-print/hplip kde scanner X
+net-wireless/bluez cups experimental systemd
+sec-policy/apparmor-profiles minimal verify-sig
+sys-apps/apparmor verify-sig
+sys-apps/apparmor-utils verify-sig
+sys-apps/flatpak policykit seccomp systemd X
+sys-apps/fwupd bluetooth policykit readline seccomp systemd tpm uefi verify-sig
+sys-apps/pciutils dns verify-sig zlib
+sys-apps/pv verify-sig
+sys-apps/systemd acl apparmor audit bpf cryptsetup pkcs11 policykit tpm
+sys-apps/xdg-desktop-portal flatpak gstreamer seccomp systemd udev
+sys-auth/rtkit systemd
+sys-boot/limine -bios -bios-cd -bios-pxe -uefi-aarch64 -uefi-cd -uefi-ia32 -uefi-loongarch64 -uefi-riscv64
+sys-firmware/intel-microcode hostonly
+sys-firmware/sof-firmware tools
+sys-fs/cryptsetup kernel nls urandom verify-sig
+sys-fs/lvm2 lvm nvme readline systemd thin xfs
+sys-fs/ntfs3g acl
+sys-kernel/dkms systemd
+sys-kernel/dracut dracut-cpio systemd
+sys-kernel/gentoo-sources experimental symlink
+sys-kernel/gentoo-kernel hardened modules-compress verify-sig
+sys-kernel/gentoo-kernel-bin modules-compress verify-sig
+sys-kernel/installkernel dracut systemd uki
+sys-kernel/linux-firmware -bindist compress-zstd deduplicate
+sys-kernel/linux-headers headers-only
+sys-process/audit io-uring ssl
+www-client/google-chrome qt6
+x11-apps/mesa-progs gles2 vulkan wayland X
+x11-base/xwayland libei systemd xcsecurity
+x11-drivers/nvidia-drivers kernel-open persistenced powerd wayland
+x11-terms/kitty verify-sig wayland
 
 #================================================================================================
 # user packages - personal apps and environment
