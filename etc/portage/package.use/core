@@ -20,7 +20,7 @@ app-admin/doas persist
 app-admin/eclean-kernel zstd
 app-arch/zstd verify-sig zlib
 app-editors/nano magic unicode verify-sig
-app-emulation/punes cg -ffmpeg X
+app-emulation/punes -ffmpeg X
 app-emulation/wine-staging ffmpeg pulseaudio udev usb vaapi wayland
 app-emulation/winetricks gui
 app-i18n/ibus appindicator libnotify systemd wayland X
