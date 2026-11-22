@@ -3,6 +3,8 @@
 # local use flags or explicit per-package overrides are managed in '/etc/portage/package.use/*'
 # see: https://github.com/librazhd7/gentoo7/blob/main/etc/portage/make.conf
 #================================================================================================
+
+#================================================================================================
 # use_expand flags - set in /etc/portage/make.conf can lead to ordering issues with portage
 #================================================================================================
 # enabling instruction set and other cpu-specific features
@@ -13,6 +15,7 @@
 
 # for mouse, keyboard, and elan touchpad support
 */* INPUT_DEVICES: libinput
+
 #================================================================================================
 # user and system packages - personal setup (@world) (cleanup by balancing globals over to 'etc/portage/make.conf'?)
 #================================================================================================
@@ -63,6 +66,7 @@ sys-libs/glibc audit cet clang hash-sysv-compat multilib stack-realign
 sys-process/audit io-uring
 x11-base/xwayland libei xcsecurity
 x11-drivers/nvidia-drivers kernel-open modules-compress powerd
+
 #================================================================================================
 # package dependencies - ...
 #================================================================================================
