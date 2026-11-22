@@ -64,7 +64,7 @@ sys-kernel/linux-headers headers-only
 sys-libs/glibc audit cet clang hash-sysv-compat multilib stack-realign
 sys-process/audit io-uring
 x11-base/xwayland libei xcsecurity
-x11-drivers/nvidia-drivers kernel-open modules-compress
+x11-drivers/nvidia-drivers kernel-open modules-compress powerd
 #================================================================================================
 # package dependencies - ...
 #================================================================================================
