@@ -19,35 +19,34 @@
 app-admin/doas persist
 app-editors/nano minimal
 app-emulation/punes -ffmpeg
-app-emulation/wine-staging ffmpeg pulseaudio udev usb vaapi
+app-emulation/wine-staging ffmpeg
 app-emulation/winetricks gui
 app-i18n/ibus appindicator libnotify
-app-misc/fastfetch dbus drm elf opengl pulseaudio
-app-misc/solaar appindicator dbus libnotify
+app-misc/fastfetch drm elf opengl
+app-misc/solaar appindicator libnotify
 app-shells/zsh pcre
-dev-java/openjdk-bin alsa
 dev-libs/openssl ktls
 games-arcade/supertux egl
 gui-wm/hyprland hyprpm
 kde-plasma/discover flatpak
-kde-plasma/plasma-meta -backup bluetooth -browser-integration -crash-handler cups discover -elogind flatpak gtk oxygen-theme virtualkeyboard
-kde-plasma/plasma-workspace	appstream flatpak -handbook networkmanager screencast
-kde-plasma/kwin activities gamepad -handbook lock screencast
+kde-plasma/plasma-meta -backup -browser-integration -crash-handler cups discover flatpak gtk oxygen-theme virtualkeyboard
+kde-plasma/plasma-workspace	appstream flatpak networkmanager
+kde-plasma/kwin activities gamepad lock
 media-fonts/corefonts tahoma
 media-libs/noise-suppression-for-voice lv2
-media-libs/openal dbus pipewire
-media-video/ffmpeg cuda-clang lame lzma nvenc opengl openssl opus pulseaudio speex svt-av1 v4l vaapi vdpau vpx x264 x265
-media-video/obs-studio nvenc screencast truetype v4l
-media-video/pipewire bluetooth dbus echo-cancel extra ffmpeg gstreamer lv2 pipewire-alsa pulseaudio sound-server v4l
+media-libs/openal pipewire
+media-video/ffmpeg cuda-clang lame lzma nvenc opengl openssl opus speex svt-av1 v4l vdpau vpx x264 x265
+media-video/obs-studio nvenc truetype v4l
+media-video/pipewire echo-cancel extra ffmpeg lv2 pipewire-alsa sound-server v4l
 net-misc/moonlight cuda-clang vdpau
-net-misc/sunshine cuda kde pipewire svt-av1 trayicon vaapi x264 x265
+net-misc/sunshine cuda kde pipewire svt-av1 trayicon x264 x265
 net-print/hplip kde scanner
 sec-policy/apparmor-profiles minimal
 sys-apps/dbus apparmor audit
-sys-apps/flatpak policykit seccomp
-sys-apps/fwupd bluetooth policykit seccomp tpm uefi
-sys-apps/systemd apparmor audit bpf boot cryptsetup policykit tpm
-sys-apps/xdg-desktop-portal flatpak gstreamer seccomp udev
+sys-apps/flatpak seccomp
+sys-apps/fwupd seccomp tpm uefi
+sys-apps/systemd apparmor audit bpf boot cryptsetup tpm
+sys-apps/xdg-desktop-portal flatpak seccomp
 sys-auth/polkit kde
 sys-boot/limine -bios -bios-cd -bios-pxe -uefi-aarch64 -uefi-cd -uefi-ia32 -uefi-loongarch64 -uefi-riscv64
 sys-devel/gcc cet default-stack-clash-protection default-znow hardened lto pch pgo multilib
