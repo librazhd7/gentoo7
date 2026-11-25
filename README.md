@@ -13,7 +13,7 @@
 
 ### features
 - [x] ~amd64
-- [x] apparmor
+- [x] apparmor (selinux planned in the future)
 - [x] bluetooth
 - [x] dracut
 - [x] flatpak
