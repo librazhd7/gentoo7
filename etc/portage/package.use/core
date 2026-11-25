@@ -40,7 +40,7 @@ media-video/ffmpeg cuda-clang lame lzma nvenc openssl opus qsv speex svt-av1 v4l
 media-video/obs-studio nvenc v4l
 media-video/pipewire echo-cancel extra ffmpeg lv2 pipewire-alsa sound-server v4l
 net-misc/moonlight cuda-clang vdpau
-net-misc/networkmanager iwd nftables -modemmanager -wext
+net-misc/networkmanager iwd nftables -bluetooth -modemmanager -ppp -wext
 net-misc/sunshine cuda kde pipewire svt-av1 trayicon x264 x265
 net-print/hplip kde scanner
 sec-policy/apparmor-profiles minimal
@@ -79,5 +79,5 @@ net-print/cups-meta -pdf
 net-print/libcupsfilters -pdf
 sys-libs/zlib minizip
 
-app-emulation/libvirt fuse lvm numa pcap
-app-emulation/qemu QEMU_SOFTMMU_TARGETS: x86_64 QEMU_USER_TARGETS: x86_64
+#app-emulation/libvirt fuse lvm numa pcap
+#app-emulation/qemu QEMU_SOFTMMU_TARGETS: x86_64 QEMU_USER_TARGETS: x86_64
