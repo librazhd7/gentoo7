@@ -452,9 +452,9 @@ reboot
 ### eclean[^19] and eclean-kernel
 ```
 emerge --ask app-admin/eclean-kernel app-portage/gentoolkit
-eclean-dist -d
 eclean-kernel -n 1
-eclean-pkg
+eclean-dist -d
+eclean-pkg -d
 ```
 
 > [!CAUTION]
