@@ -73,6 +73,7 @@ x11-drivers/nvidia-drivers kernel-open modules-compress powerd
 #================================================================================================
 media-gfx/sane-backends hp
 media-libs/libsdl2 kms
+media-libs/libvpx postproc
 net-dns/avahi python
 net-libs/gnutls tools pkcs11
 net-print/cups-meta -pdf
