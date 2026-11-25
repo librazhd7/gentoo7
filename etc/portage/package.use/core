@@ -40,7 +40,7 @@ media-video/ffmpeg cuda-clang lame lzma nvenc openssl opus qsv speex svt-av1 v4l
 media-video/obs-studio nvenc v4l
 media-video/pipewire echo-cancel extra ffmpeg lv2 pipewire-alsa sound-server v4l
 net-misc/moonlight cuda-clang vdpau
-net-misc/networkmanager connection-sharing iwd nftables -modemmanager -wext
+net-misc/networkmanager iwd nftables -modemmanager -wext
 net-misc/sunshine cuda kde pipewire svt-av1 trayicon x264 x265
 net-print/hplip kde scanner
 sec-policy/apparmor-profiles minimal
@@ -63,7 +63,6 @@ sys-kernel/gentoo-kernel hardened modules-compress
 sys-kernel/gentoo-kernel-bin modules-compress
 sys-kernel/installkernel dracut uki
 sys-kernel/linux-firmware compress-zstd deduplicate -bindist
-sys-kernel/linux-headers headers-only
 sys-libs/glibc audit cet clang hash-sysv-compat multilib stack-realign
 sys-process/audit io-uring
 x11-base/xwayland libei xcsecurity
