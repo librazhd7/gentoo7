@@ -30,7 +30,7 @@ app-shells/zsh pcre
 dev-libs/openssl ktls
 gui-wm/hyprland hyprpm
 kde-plasma/discover flatpak
-kde-plasma/plasma-meta cups discover flatpak gtk oxygen-theme virtualkeyboard -backup -browser-integration -crash-handler
+kde-plasma/plasma-meta cups discover flatpak gtk oxygen-theme virtualkeyboard -backup -browser-integration -crash-handler -firewall
 kde-plasma/plasma-workspace appstream flatpak networkmanager
 kde-plasma/kwin activities gamepad lock
 media-fonts/corefonts tahoma
