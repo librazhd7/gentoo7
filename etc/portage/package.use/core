@@ -27,6 +27,7 @@ app-misc/fastfetch drm elf
 app-misc/solaar appindicator libnotify
 app-shells/zsh pcre
 dev-libs/openssl ktls
+gui-libs/wlroots x11-backend
 gui-wm/hyprland hyprpm
 kde-plasma/discover flatpak
 kde-plasma/plasma-meta cups discover flatpak gtk oxygen-theme virtualkeyboard -backup -browser-integration -crash-handler -firewall
