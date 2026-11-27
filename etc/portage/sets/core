@@ -32,6 +32,7 @@ dev-build/ninja
 dev-java/openjdk-bin
 dev-lang/rust-bin
 dev-libs/intel-compute-runtime
+dev-libs/libxdg-basedir
 dev-libs/openssl
 dev-util/nvidia-cuda-toolkit
 dev-util/vulkan-tools
