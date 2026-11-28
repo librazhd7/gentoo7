@@ -13,7 +13,7 @@
 
 ### features
 - [x] ~amd64
-- [x] apparmor (selinux planned in the future)
+- [x] apparmor (__selinux__ planned in the future)
 - [x] bluetooth
 - [x] dracut
 - [x] flatpak
@@ -55,7 +55,6 @@
 - overhaul readme index for proper sectional navigation
 - reference docs & files in the repository
 - scripts for applying repo-specific configurations and installing gentoo automatically
-- more emphasis and maybe philosophical view change on minimal global/local use flags
 - proper documentation regarding command issuing throughout the guide
 - adding more sections by separating/slimming down others (__higher clarity in sections needed__)
 
